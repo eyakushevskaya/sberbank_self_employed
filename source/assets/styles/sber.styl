@@ -73,6 +73,29 @@ body
             border-color #148F2B
     .new-app-form-wrap
         padding 0
+        textarea
+            background rgba(0, 0, 0, 0.04)
+            border 1px solid transparent
+            height 124px
+            padding 28px 16px 16px
+            font: 1.4rem $sinter
+            color #172419
+            & + .float-label
+                top 8px
+            &:focus
+                color #172419
+                border-color rgba(18, 129, 39, 0.40)
+                background rgba(0, 0, 0, 0.04)
+            &:focus
+            &:not(:placeholder-shown)
+                & + .float-label
+                    font-size 1.1rem
+                    line-height 1.6rem
+                    top 6px
+            &:not(:placeholder-shown) + .float-label
+                color rgba(23, 36, 25, 0.48)
+            &:focus + .float-label
+                color #128127
     .new-app-form-footer
         background #fff
         border-top none
@@ -90,6 +113,19 @@ body
         font: 1.4rem $sinter
         text-align left
         &:focus
+            border-color rgba(18, 129, 39, 0.40)
+            background rgba(0, 0, 0, 0.04)
+    textarea
+        background rgba(0, 0, 0, 0.04)
+        border 1px solid transparent
+        height 124px
+        padding 28px 16px 16px
+        font: 1.4rem $sinter
+        text-align left
+        & + .float-label
+            top 8px
+        &:focus
+            color #172419
             border-color rgba(18, 129, 39, 0.40)
             background rgba(0, 0, 0, 0.04)
     &.with-float-label
@@ -111,6 +147,17 @@ body
                 background url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAQAAADZc7J/AAAAkElEQVR42u2USwrAIAxEPWpuoheQObKlSC225tsunXXeI+iQlHb+TaVKH2YqoaEhSzjyOcMo0AWCouNo4HZAkRQDL9KKrMKE8wozvla48LfCjc+KED4pYvhDUULFHssr7dTxiOJ+OrmdKq4X3NR5l2L972YFXxuTQm6dqqik1eZSyBepGNrJXiSCelQtMzvOHJuWALADA3RDAAAAAElFTkSuQmCC") 0 0 no-repeat
                 background-size 16px 16px
                 right 56px
+        textarea
+            & + .float-label
+                top 8px
+            &:focus
+            &:not(:placeholder-shown)
+                & + .float-label
+                    font-size 1.1rem
+                    line-height 1.6rem
+                    top 6px
+            &:not(:placeholder-shown) + .float-label
+                color rgba(23, 36, 25, 0.48)
         .float-label
             font-size 1.4rem
             line-height 2rem
@@ -123,6 +170,44 @@ body
         padding-top 16px
         padding-bottom 0
 
+.custom-form__field-switch
+    label
+        color #172419
+        .switcher
+            background rgba(0, 0, 0, 0.40)
+            &:after
+                width 16px
+                height 16px
+                top 4px
+                left 4px
+    input.checkbox:checked
+        & + .switcher
+            background #148F2B
+            &:after
+                right 4px
+
+.custom-form__field-avatar
+    width 96px
+    height 96px
+    border-radius 24px
+    background rgba(0, 0, 0, 0.04)
+    margin 0 auto
+    display flex
+    align-items center
+    justify-content center
+    position relative
+    .ph-camera
+        font-size 32px
+        opacity .72
+    img
+        display block
+        width 100%
+        height 100%
+        object-fit cover
+        position absolute
+        top 0
+        left 0
+        border-radius 24px
 .btn
     border-radius 16px
     background #148F2B
