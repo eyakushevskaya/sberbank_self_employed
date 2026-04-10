@@ -1,0 +1,42 @@
+clearfix()
+	&:after
+		content: '';
+		display: table;
+		clear: both;
+
+ellipsis()
+	max-width 100%
+	overflow hidden
+	text-overflow ellipsis
+	white-space nowrap
+
+// font-family
+$inter = 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif
+
+// media-queries
+$desktop = 'screen and (max-width: 1240px)'
+$tablet = 'screen and (max-width: 1024px)'
+$phone = 'screen and (max-width: 768px)'
+$smallphone = 'screen and (max-width: 350px)'
+
+$fontList = {
+	h1: {
+		desktop: {"fz": 2rem, "fw": 500, "lh": 2.4rem, "m": 0}
+	},
+	h3: {
+		desktop: {"fz": 1.4rem, "fw": 400, "lh": 1.8rem, "m": 0 0 8px}
+	}
+}
+
+fz(key = norm)
+	getProps(size)
+		$fontProps = $fontList[key][size];
+		font-size $fontProps["fz"];
+		font-weight $fontProps["fw"];
+		line-height $fontProps["lh"];
+		letter-spacing $fontProps["ls"];
+		margin $fontProps["m"];
+	
+	getProps("desktop")
+	@media $phone
+		getProps("phone")

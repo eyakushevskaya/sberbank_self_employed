@@ -1,0 +1,228 @@
+body
+    font 1.4rem/2rem $inter
+    letter-spacing -0.28px
+    color #172419
+    background #F1F1F1
+
+.redesign-version
+    &.home-type
+        background #fff
+        .h-header
+            &.popup-header
+                padding 24px 16px
+    &.home-type-gray
+        background #F1F1F1
+        .popup-body
+            height 100%
+        .popup-footer
+            background #fff
+            padding-top 0
+            padding-bottom 8px
+    .h-header
+        box-shadow none
+        border-radius 0
+        h1.logo
+            margin-left 0
+            a
+                width 154px
+                height 24px
+                background-image url(../i/logo_sber.png)
+                background-size 154px 24px
+            .welcome
+                font-size 2.4rem
+                line-height 125%
+                font-weight 600
+                margin-top 40px
+                letter-spacing -0.48px
+            .sub-welcome
+                display block
+                font-size 1.6rem
+                line-height 2.4rem
+                font-weight 400
+                margin-top 4px
+    .auth
+        padding-top 0
+        color #172419
+        .custom-form__field
+            input.text
+                background rgba(0, 0, 0, 0.04)
+                border 1px solid transparent
+                padding 16px
+                &:focus
+                    border-color rgba(18, 129, 39, 0.40)
+                    & ~ .toggle-password
+                        background-image url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAAmVBMVEUAAAAVjysUjywYjzAVjysgjzAYjygUjysVjysUjysVjysUjywVkCsUjysQjzAUjywQjyggjyAUkCwUjywVjysUjywUjyoVjyoVjiwVjysUkCsVkCsVjysWjykTjy0Wjy0Vjy0UjykUjyoUjyoUjywVjzAUjysUkCwTjysTjisUjywVjisTjysTkSsUjysTjywTkCsUkCwUjysmEWMvAAAAMnRSTlMA3+8gYBAgcM/vMICfvxBAIBC/f6DPgJBvj7/fn1BQUGBwf6+vMI+vn1+/oGBfz5CfzzG8qh4AAAIaSURBVHhe7ZVZd5swFIRzhUBGGEOwa0Lx1ixNui7+/z+u6FpHaGSOnPaZefS53zAaydJdXLNmzapP3RPReRAtyu6o/42u3sQ5EO2O76XTR49Gj+Q9+O4c0W0L93XRtCddcxvVoWhcqMco/kKWbqurWjZky4iEeLAj6n5yQNKNEJ8ZF4qBmEU33V7JfHvvbUc5AKJUY+hsw0OLdIJfcHV7hyfPk+VLQgfkKXP8FzgMuRxDTDvs2HeMv/ZxbG71k0Mhvw54yVCjhoOgbXM/0AH3Yh/wiYDtULyKJHCoRj4hu35YkB4HdD4AT3fYQ57AvPD4xPD8fciQBo4lLFgF44QlfR2Abeh4tIDJswynJXMAlOEMpS4AL8Ap5wZAWRgqy12mD5DOyMRjLPZb4Szp/wzWzqDALbGWNfLaDPl8IlxRK5oqSAHPRX2Es++VcjDxPsHyrCOGUuHdI/0v5l7tK+cI81mwgCVsCdx1z4Hji+GXkbNfwSVhHCHDg7BHBS6PPWyqdcC/M8khRa0ud50M+C2W9A0c2BG1DfgN4HxJYA8y93HxHdYPlwc6SLyArV7HvvYCeXTACzhT5kXrm2KcTi9vR+N40C/bXOTpEsy3gMFexCxSRYzjKUdldoR2149rJ6y9nmbD7RNlcawuz7s+daV79YsYbcuPaOnai1rQNC0KwGM6XHuI31DLbelD2/zpDdr3r+2pjgOzZs36C7w3i7ED5GdOAAAAAElFTkSuQmCC")
+            .toggle-password
+                width 32px
+                height 32px
+                background-image none
+                background-size 32px 32px
+                top 10px
+            &.with-float-label
+                input.reset
+                    top 18px
+            &.error
+                input.text
+                    background rgba(255, 59, 56, 0.08)
+        a
+            color #172419
+            text-decoration underline
+    .checkbox-list-var2
+        .checkbox-view i
+            font-size 14px
+            margin-top 3px
+        input.checkbox:checked + .checkbox-view
+            background #148F2B
+            border-color #148F2B
+
+.custom-form__field
+    input.text
+        background rgba(0, 0, 0, 0.04)
+        border 1px solid transparent
+        padding 16px
+        height 52px
+        font: 1.4rem $sinter;
+        &:focus
+            border-color rgba(18, 129, 39, 0.40)
+    &.with-float-label
+        posiiton relative
+        input.text
+            &:focus
+            &:not(:placeholder-shown)
+                padding-top 24px
+                padding-bottom 8px
+                & + .float-label
+                    font-size 1.1rem
+                    line-height 1.6rem
+                    top 6px
+            &:not(:placeholder-shown) + .float-label
+                color rgba(23, 36, 25, 0.48)
+            &:focus + .float-label
+                color #128127
+            &:focus ~ input.reset
+                background url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAQAAADZc7J/AAAAkElEQVR42u2USwrAIAxEPWpuoheQObKlSC225tsunXXeI+iQlHb+TaVKH2YqoaEhSzjyOcMo0AWCouNo4HZAkRQDL9KKrMKE8wozvla48LfCjc+KED4pYvhDUULFHssr7dTxiOJ+OrmdKq4X3NR5l2L972YFXxuTQm6dqqik1eZSyBepGNrJXiSCelQtMzvOHJuWALADA3RDAAAAAElFTkSuQmCC") 0 0 no-repeat
+                background-size 16px 16px
+                right 56px
+        .float-label
+            font-size 1.4rem
+            line-height 2rem
+            color rgba(23, 36, 25, 0.48)
+            position absolute
+            top 16px
+            left 16px
+            transition all .175s
+    &.with-btn
+        padding-top 16px
+        padding-bottom 0
+
+.btn
+    border-radius 16px
+    background #148F2B
+    font 500 1.6rem/2.4rem $inter
+    color #fff
+    padding 12px
+    &.gray
+        background rgba(0, 0, 0, 0.12)
+        color #172419
+button.btn
+    font-family $inter
+
+.popup-footer
+    padding-top 8px
+    padding-bottom 24px
+
+.popup-footer_title
+    font-size 1.6rem
+    line-height 2.4rem
+    text-align center
+    margin 0 0 8px
+
+.foot-nav
+    padding 0
+    li
+        height 66px
+        font-size 1.1rem
+        line-height 1.6rem
+        letter-spacing -0.22px
+        &.other
+            svg
+                top 10px
+        &.add
+            background #148F2B
+    a
+        color #172419
+    svg
+        top 10px
+
+.h-content-round-wrap
+    display flex
+    flex-direction column
+    height 100%
+.b-content-round-item
+    background #fff
+    border-radius 24px
+    margin 0 0 8px
+    padding 16px 0
+    &:first-child
+        border-radius 0 0 24px 24px
+    &:last-child
+        border-radius 24px 24px 0 0
+        margin 0
+        flex-grow 1
+
+.b-lk-hello
+    padding 16px 0 32px
+.b-lk-hello-head1
+    font-size 2.4rem
+    line-height 125%
+    font-weight 600
+    letter-spacing -0.48px
+    margin 0 0 4px
+.b-lk-hello-head2
+    font-size 1.6rem
+    line-height 2.4rem
+    font-weight 400
+    margin 0
+    letter-spacing 0
+.b-lk-title
+.redesign-version .popup-body h3
+    font-size 1.8rem
+    line-height 2.8rem
+    font-weight 600
+    margin 4px 0 16px
+    letter-spacing 0
+.b-lk-settings-list
+    display flex
+    flex-wrap wrap
+    align-items stretch
+    gap 8px
+    &_item
+        display block
+        box-sizing border-box
+        height 100%
+        padding 16px
+        background rgba(0, 0, 0, 0.04)
+        border-radius 16px
+        color #172419
+    &_icon
+        display block
+        height 32px
+        margin 0 0 12px
+        .ph
+            font-size 32px
+        svg
+            display block
+    &_title
+        display block
+        font-size 1.6rem
+        line-height 2.4rem
+        font-weight 600
+        margin 0 0 4px
+    &_copy
+        display block
+        font-size 1.4rem
+        line-height 2rem
+        letter-spacing -0.28px
+        color rgba(23, 36, 25, 0.72)
+    li
+        width calc(50% - 4px)

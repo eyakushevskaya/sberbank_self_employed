@@ -1,0 +1,26 @@
+{
+  "name": "sberbank-self-employed",
+  "description": "",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "gulp": "gulp",
+    "gulp:build": "gulp"
+  },
+  "dependencies": {
+    "stylus": "^0.56.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.29.3",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-html-beautify": "^1.0.1",
+    "gulp-plumber": "^1.2.1",
+    "gulp-pug": "^5.0.0",
+    "gulp-stylus": "^2.7.1"
+  },
+  "resolutions": {
+    "graceful-fs": "^4.2.11"
+  }
+}
