@@ -2,22 +2,13 @@ body
     font 1.4rem/2rem $inter
     letter-spacing -0.28px
     color #172419
-    background #F1F1F1
 
 .redesign-version
+    padding-bottom 80px
     &.home-type
-        background #fff
         .h-header
             &.popup-header
                 padding 24px 16px
-    &.home-type-gray
-        background #F1F1F1
-        .popup-body
-            height 100%
-        .popup-footer
-            background #fff
-            padding-top 0
-            padding-bottom 8px
     .h-header
         box-shadow none
         border-radius 0
@@ -40,6 +31,12 @@ body
                 line-height 2.4rem
                 font-weight 400
                 margin-top 4px
+        .back-to-prev
+            display flex
+            margin-left -8px
+            margin-right 16px
+        .ph-arrow-left
+            font-size 32px
     .auth
         padding-top 0
         color #172419
@@ -74,6 +71,15 @@ body
         input.checkbox:checked + .checkbox-view
             background #148F2B
             border-color #148F2B
+    .new-app-form-wrap
+        padding 0
+    .new-app-form-footer
+        background #fff
+        border-top none
+        backdrop-filter blur(20px)
+        padding-top 8px
+        padding-bottom 24px
+        height auto
 
 .custom-form__field
     input.text
@@ -81,11 +87,13 @@ body
         border 1px solid transparent
         padding 16px
         height 52px
-        font: 1.4rem $sinter;
+        font: 1.4rem $sinter
+        text-align left
         &:focus
             border-color rgba(18, 129, 39, 0.40)
+            background rgba(0, 0, 0, 0.04)
     &.with-float-label
-        posiiton relative
+        position relative
         input.text
             &:focus
             &:not(:placeholder-shown)
@@ -128,9 +136,10 @@ button.btn
     font-family $inter
 
 .popup-footer
+    padding 0
+.popup-footer-inner
     padding-top 8px
     padding-bottom 24px
-
 .popup-footer_title
     font-size 1.6rem
     line-height 2.4rem
@@ -138,7 +147,7 @@ button.btn
     margin 0 0 8px
 
 .foot-nav
-    padding 0
+    padding 0 0 8px
     li
         height 66px
         font-size 1.1rem
@@ -163,12 +172,31 @@ button.btn
     border-radius 24px
     margin 0 0 8px
     padding 16px 0
+    position relative
+    &:after
+        display block
+        content ""
+        width 100%
+        height 56px
+        background #F1F1F1
+        position absolute
+        bottom -32px
+        left 0
+        z-index -1
     &:first-child
         border-radius 0 0 24px 24px
     &:last-child
         border-radius 24px 24px 0 0
         margin 0
         flex-grow 1
+        &:after
+            display none
+.b-content-round-item-title
+    font-size 1.8rem
+    line-height 2.8rem
+    font-weight 600
+    margin 4px 0 16px
+    letter-spacing 0
 
 .b-lk-hello
     padding 16px 0 32px
