@@ -8,7 +8,7 @@
         <meta content="" name="Keywords">
         <meta content="index,follow" name="robots">
         <meta content="yes" name="apple-mobile-web-app-capable">
-        <title>SON</title>
+        <title>Сбербанк</title>
         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
         <link href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" rel="stylesheet" type="text/css">
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&amp;display=swap" rel="stylesheet" type="text/css">
@@ -81,9 +81,18 @@
                                             </label>
                                         </div>
                                     </div>
-                                    <div class="custom-form__field block relative with-float-label">
-                                        <input class="text" type="text" placeholder="" />
-                                        <label class="float-label">Рабочее время</label>
+                                    <div class="custom-form__field block relative work-time" tabindex="0">
+                                        <label class="work-time__label">Рабочее время</label>
+                                        <div class="work-time__fields">
+                                            <div class="work-time__group">
+                                                <span class="work-time__text">от</span>
+                                                <input class="work-time__input" type="time" required />
+                                            </div>
+                                            <div class="work-time__group">
+                                                <span class="work-time__text">до</span>
+                                                <input class="work-time__input" type="time" required />
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="custom-form__field last block relative with-float-label">
                                         <textarea class="text" placeholder=""></textarea>
