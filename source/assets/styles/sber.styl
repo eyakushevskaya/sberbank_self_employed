@@ -12,12 +12,17 @@ a
         .h-header
             &.popup-header
                 padding 24px 16px
+        .h-sitenav
+            padding-left 0
+            padding-right 0
     .h-header
         box-shadow none
         border-radius 0
         &.popup-header
             display block
             padding 0
+            h1.fw-600
+                font-weight 600
         h1.logo
             margin-left 0
             a
@@ -129,6 +134,13 @@ a
                 &:before
                     outline-color #148F2B
                     background #148F2B
+    .nav-list
+        & + .logout
+            padding 12px 4px
+        a
+            padding-left 40px
+        svg
+            left 4px
 
 .radio-list-custom__title
     font-size 1.4rem
