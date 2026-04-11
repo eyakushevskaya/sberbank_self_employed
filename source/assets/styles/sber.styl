@@ -3,6 +3,9 @@ body
     letter-spacing -0.28px
     color #172419
 
+a
+    color #128127
+
 .redesign-version
     padding-bottom 74px
     &.home-type
@@ -117,6 +120,20 @@ body
         .ph-magnifying-glass
             font-size 1.6rem
             left 12px
+    .radio-list-custom
+        .radio-label
+            color #172419
+        input.radio:checked
+            & + .radio-label
+                color #172419
+                &:before
+                    outline-color #148F2B
+                    background #148F2B
+
+.radio-list-custom__title
+    font-size 1.4rem
+    line-height 2rem
+    margin 0 0 8px
 
 .custom-form__field
     input.text
@@ -186,7 +203,10 @@ body
         padding-bottom 0
 
 .custom-form__field-switch
+    font-size 1.4rem
+    line-height 2rem
     label
+        padding-left 52px
         color #172419
         .switcher
             background rgba(0, 0, 0, 0.40)
@@ -200,6 +220,24 @@ body
             background #148F2B
             &:after
                 right 4px
+
+.custom-form__field-inn
+    &:last-child
+        flex-grow 0
+.custom-form__field-del
+    width 40px
+    height 100%
+    font-size 1.6rem
+    position relative
+    .ph-x
+        top 50%
+        right auto
+        left 50%
+        transform translate(-50%, -50%)
+
+.custom-form__field-link-add
+    margin 14px 0
+    font-weight 500
 
 .custom-form__field-avatar
     width 96px
@@ -549,3 +587,13 @@ button.btn
         visibility visible
         pointer-events auto
         margin-top 24px
+
+.head-tabs-wrap
+    padding 16px 0
+.head-tabs
+    background #D0E9D5
+    li
+        color #172419
+        &.active
+            border-color #fff
+            color #172419

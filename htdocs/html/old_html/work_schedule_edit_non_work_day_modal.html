@@ -960,69 +960,50 @@
                         <div class="h-fixed">
                             <div class="head-tabs-wrap">
                                 <ul class="head-tabs w50">
-                                    <li class="active">Рабочий</li>
-                                    <li>Нерабочий</li>
+                                    <li>Рабочий</li>
+                                    <li class="active">Нерабочий</li>
                                 </ul>
                             </div>
                             <form action="">
-                                <div class="custom-form__field block padd3">
-                                    <div class="work-time" tabindex="0">
-                                        <label class="work-time__label">Рабочее время</label>
-                                        <div class="work-time__fields">
-                                            <div class="work-time__group">
-                                                <span class="work-time__text">от</span>
-                                                <input class="work-time__input" type="time" required />
-                                            </div>
-                                            <div class="work-time__group">
-                                                <span class="work-time__text">до</span>
-                                                <input class="work-time__input" type="time" required />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="custom-form__field">
-                                    <div class="custom-form__field-switch">
+                                <div class="radio-list-custom__title">Статус</div>
+                                <ul class="radio-list-custom">
+                                    <li>
                                         <label>
-                                            <input class="checkbox" type="checkbox" />
-                                            <span class="switcher"></span>
-                                            Сверхурочное
+                                            <input type="radio" class="radio" name="non-work" />
+                                            <span class="radio-label">Выходной</span>
                                         </label>
-                                    </div>
-                                </div>
-                                <div class="custom-form__field padd3-var3">
-                                    <div class="custom-form__field-inn">
-                                        <div class="work-time" tabindex="1">
-                                            <label class="work-time__label">Рабочее время</label>
-                                            <div class="work-time__fields">
-                                                <div class="work-time__group">
-                                                    <span class="work-time__text">от</span>
-                                                    <input class="work-time__input" type="time" required />
-                                                </div>
-                                                <div class="work-time__group">
-                                                    <span class="work-time__text">до</span>
-                                                    <input class="work-time__input" type="time" required />
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="custom-form__field-inn">
-                                        <div class="custom-form__field-del">
-                                            <i class="ph-x"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="custom-form__field">
-                                    <div class="custom-form__field-switch">
+                                    </li>
+                                    <li>
                                         <label>
-                                            <input class="checkbox" type="checkbox" />
-                                            <span class="switcher"></span>
-                                            Сверхурочное
+                                            <input type="radio" class="radio" name="non-work" />
+                                            <span class="radio-label">Больничный</span>
                                         </label>
-                                    </div>
-                                </div>
-                                <div class="custom-form__field-link-add">
-                                    <a href="">Добавить промежуток</a>
-                                </div>
+                                    </li>
+                                    <li>
+                                        <label>
+                                            <input type="radio" class="radio" name="non-work" />
+                                            <span class="radio-label">Отпуск</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label>
+                                            <input type="radio" class="radio" name="non-work" />
+                                            <span class="radio-label">Неоплачиваемый отпуск</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label>
+                                            <input type="radio" class="radio" name="non-work" />
+                                            <span class="radio-label">Командировка</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label>
+                                            <input type="radio" class="radio" name="non-work" />
+                                            <span class="radio-label">Декрет</span>
+                                        </label>
+                                    </li>
+                                </ul>
                             </form>
                         </div>
                     </div>
