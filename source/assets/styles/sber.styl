@@ -25,6 +25,8 @@ a
         &.popup-header
             h1.fw-600
                 font-weight 600
+            .today
+                color: #128127;
         h1.logo
             margin-left 0
             a
@@ -647,3 +649,37 @@ button.btn
         margin-left 16px
     .head-top-icon
         color #148F2B
+
+
+
+.h-calendar-inner .ui-widget.ui-widget-content {
+    border: none;
+}
+.h-calendar-inner .ui-datepicker .ui-datepicker-header {
+    margin-bottom: 15px;
+}
+.h-calendar-inner .ui-datepicker .ui-datepicker-next,
+.h-calendar-inner .ui-datepicker .ui-datepicker-prev {
+    background: none;
+    margin-top: 0;
+}
+.h-calendar-inner .ui-datepicker .ui-datepicker-prev {
+    transform: none;
+}
+.h-calendar-inner .ui-state-default, .ui-widget-content .ui-state-default {
+    background: rgba(0, 0, 0, .04);
+    border-radius: 16px;
+    border: 1px solid transparent;
+    padding: 0;
+    text-align: center;
+}
+.h-calendar-inner .ui-datepicker .ui-datepicker-title {
+    color: #128127;
+}
+#select_date .h-calendar-inner .ui-datepicker .ui-state-active {
+    background: #148F2B;
+    color: #fff;
+}
+.h-calendar-inner .ui-widget-content .ui-state-highlight {
+    border-color: transparent;
+}
