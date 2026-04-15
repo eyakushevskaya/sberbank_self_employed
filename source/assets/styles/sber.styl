@@ -15,6 +15,10 @@ a
         .h-sitenav
             padding-left 0
             padding-right 0
+    &.var2-content-bg
+        box-sizing border-box
+        min-height 100%
+        background #F1F1F1
     .h-header
         box-shadow none
         border-radius 0
@@ -48,6 +52,9 @@ a
             margin-right 16px
         .ph-arrow-left
             font-size 32px
+        .searchbox-filter-wrap.fs-16
+            .nav-list ul a
+                color inherit
     .auth
         padding-top 0
         color #172419
@@ -75,6 +82,9 @@ a
         a
             color #172419
             text-decoration underline
+        .agree li
+            font-size 1.6rem
+            line-height 2.4rem
     .checkbox-list-var2
         .checkbox-view i
             font-size 14px
@@ -88,11 +98,11 @@ a
             background rgba(0, 0, 0, 0.04)
             border 1px solid transparent
             height 124px
-            padding 28px 16px 16px
-            font: 1.4rem $sinter
+            padding 24px 16px 16px
+            font: 1.6rem $inter
             color #172419
             & + .float-label
-                top 8px
+                top 6px
             &:focus
                 color #172419
                 border-color rgba(18, 129, 39, 0.40)
@@ -100,11 +110,11 @@ a
             &:focus
             &:not(:placeholder-shown)
                 & + .float-label
-                    font-size 1.1rem
-                    line-height 1.6rem
+                    font-size 1.2rem
+                    line-height 1.8rem
                     top 6px
             &:not(:placeholder-shown) + .float-label
-                color rgba(23, 36, 25, 0.48)
+                color #172419
             &:focus + .float-label
                 color #128127
     .new-app-form-footer
@@ -120,7 +130,7 @@ a
             margin 0
     .searchbox
         input.text
-            font 1.4rem/2rem $inter
+            font 1.6rem $inter
             padding-left 36px
             border 1px solid transparent
             &:focus
@@ -144,6 +154,19 @@ a
             padding-left 40px
         svg
             left 4px
+    .filter-tags-list
+        li
+            background rgba(0, 0, 0, 0.04)
+            border 1px solid transparent
+            border-radius 16px
+            padding 7px 11px
+            color rgba(23, 36, 25, 0.72)
+            &.active
+                background-image url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAcElEQVR4Ae3WwQmAMBBEUYtYmzAWZSdJB1uykltgDnv7Is5Arvv+RXDzPO8327Nd872CR549st3zSQSGawCPRx7D+Bdw+WR4fDnQIVwDNALAl4NDIgC8jADwOgLA64gKByJAXCN4XCMwnP+x4Od53gMTTribX3SLmgAAAABJRU5ErkJggg==")
+                background-color #D0E9D5
+                border-color rgba(18, 129, 39, 0.40)
+                padding-left 28px
+                color #083911
 
 .radio-list-custom__title
     font-size 1.4rem
@@ -156,7 +179,7 @@ a
         border 1px solid transparent
         padding 16px
         height 52px
-        font: 1.4rem $sinter
+        font 1.6rem $inter
         text-align left
         &:focus
             border-color rgba(18, 129, 39, 0.40)
@@ -166,10 +189,10 @@ a
         border 1px solid transparent
         height 124px
         padding 28px 16px 16px
-        font: 1.4rem $sinter
+        font: 1.6rem $sinter
         text-align left
         & + .float-label
-            top 8px
+            top 6px
         &:focus
             color #172419
             border-color rgba(18, 129, 39, 0.40)
@@ -179,14 +202,14 @@ a
         input.text
             &:focus
             &:not(:placeholder-shown)
-                padding-top 24px
+                padding-top 22px
                 padding-bottom 8px
                 & + .float-label
-                    font-size 1.1rem
-                    line-height 1.6rem
-                    top 6px
+                    font-size 1.2rem
+                    line-height 1.8rem
+                    top 4px
             &:not(:placeholder-shown) + .float-label
-                color rgba(23, 36, 25, 0.48)
+                color #172419
             &:focus + .float-label
                 color #128127
             &:focus ~ input.reset
@@ -195,21 +218,21 @@ a
                 right 56px
         textarea
             & + .float-label
-                top 8px
+                top 6px
             &:focus
             &:not(:placeholder-shown)
                 & + .float-label
-                    font-size 1.1rem
-                    line-height 1.6rem
-                    top 6px
+                    font-size 1.2rem
+                    line-height 1.8rem
+                    top 4px
             &:not(:placeholder-shown) + .float-label
-                color rgba(23, 36, 25, 0.48)
+                color #172419
         .float-label
-            font-size 1.4rem
-            line-height 2rem
-            color rgba(23, 36, 25, 0.48)
+            font-size 1.6rem
+            line-height 2.4rem
+            color #172419
             position absolute
-            top 16px
+            top 14px
             left 16px
             transition all .175s
             pointer-events none
@@ -218,8 +241,6 @@ a
         padding-bottom 0
 
 .custom-form__field-switch
-    font-size 1.4rem
-    line-height 2rem
     label
         padding-left 52px
         color #172419
@@ -545,11 +566,11 @@ button.btn
     border-radius 8px
     border 1px solid transparent
     &__label
-        font-size 1.4rem
-        line-height 2rem
-        color rgba(23, 36, 25, .48)
+        font-size 1.6rem
+        line-height 2.4rem
+        color #172419
         position absolute
-        top 16px
+        top 14px
         left 16px
         transition all 175ms
         pointer-events none
@@ -567,13 +588,13 @@ button.btn
         pointer-events none
         transition .2s ease
     &__text
-        font 1.4rem/125% $inter
+        font 1.6rem $inter
         color #172419
     &__input
         border none
         background transparent
         outline none
-        font 1.4rem/2rem $inter
+        font 1.6rem/2.4rem $inter
         color #172419
         padding 0
         appearance none
@@ -581,27 +602,27 @@ button.btn
 .work-time:focus-within
     border-color rgba(18, 129, 39, 0.40)
     .work-time__label
-        top 6px
+        top 4px
         transform translateY(0)
-        font-size 1.1rem
-        line-height 1.6rem
+        font-size 1.2rem
+        line-height 1.8rem
         color #128127
     .work-time__group
         opacity 1
         visibility visible
         pointer-events auto
-        margin-top 24px
+        margin-top 22px
 .work-time:has(.work-time__input:valid)
     .work-time__label
-        top 6px
+        top 4px
         transform translateY(0)
-        font-size 1.1rem
-        line-height 1.6rem
+        font-size 1.2rem
+        line-height 1.8rem
     .work-time__group
         opacity 1
         visibility visible
         pointer-events auto
-        margin-top 24px
+        margin-top 22px
 
 .head-tabs-wrap
     padding 16px 0
@@ -612,3 +633,17 @@ button.btn
         &.active
             border-color #fff
             color #172419
+
+.head-top
+    h1.fw-600
+        font-weight 600
+    .head-period
+    .today
+        font-size 1.4rem
+        line-height 2rem
+        font-weight 500
+        letter-spacing -0.28px
+        color #128127
+        margin-left 16px
+    .head-top-icon
+        color #148F2B
