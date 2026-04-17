@@ -130,11 +130,19 @@ a
     .newapp-popup-list-choose
         li
             margin 0
+            &.active
+                a
+                    background rgba(18, 129, 39,.08)
+        .ph-check-bold
+            color #128127
     .searchbox
+        &.padd3
+            padding-bottom 8px
         input.text
             font 1.6rem $inter
             padding-left 36px
             border 1px solid transparent
+            height 48px
             &:focus
                 border-color rgba(18, 129, 39, .4)
         .ph-magnifying-glass
@@ -156,6 +164,13 @@ a
             padding-left 40px
         svg
             left 4px
+    .h-header .searchbox-filter-wrap .nav-list
+        ul
+            li.active
+                a
+                    color #128127
+                i.ph-x
+                    font-size 1.6rem
     .filter-tags-list
         li
             background rgba(0, 0, 0, 0.04)
@@ -169,6 +184,86 @@ a
                 border-color rgba(18, 129, 39, 0.40)
                 padding-left 28px
                 color #083911
+    .statistics-list
+        .money-type
+            color #172419
+            .all
+                color #172419
+    .booking-item
+        box-shadow none
+        border-width 4px
+        margin 0 0 16px
+        padding-top 16px
+        &:last-child
+            margin-bottom 0
+    .booking-item__badge
+        font-size 1.4rem
+        line-height 2rem
+        padding 2px 12px
+        border-radius 16px
+        background rgba(23, 36, 25, 0.72)
+        position absolute
+        top 16px
+        right 16px
+        color #fff
+    .booking-item__time
+        font-size 1.4rem
+        line-height 2rem
+        font-weight 500
+        gap 4px
+        padding 2px 0 18px
+    .booking-item__time-time
+        color #172419
+    .booking-item__time-date
+        margin-left 0
+        color #172419
+    .booking-item_completed
+        .booking-item__time-bull
+            color #75b872
+    .booking-item_current
+        .booking-item__time-bull
+            color #f57f7d
+    .booking-item_new
+        .booking-item__time-bull
+            color #5bb2e0
+    .booking-item_confirm
+        .booking-item__time-bull
+            color #a58fd4
+    .booking-item__client
+        font-weight 600
+        margin-bottom 16px
+    .booking-item__client-phone
+        margin-top 2px
+        font-weight 400
+    .booking-item__service
+        padding 0 0 1px
+    .booking-item__price
+        margin 0
+    .clients-list
+        &.with-borders-2
+            li
+                padding-top 12px
+                padding-bottom 12px
+        li
+            &.no-phone-icon
+                padding-left 0
+            &.no-padd-right
+                padding-right 0
+        .client-info
+            .name
+                color #172419
+                font-size 1.6rem
+                line-height 2.4rem
+            .email
+            .phone-number
+            .bull
+                font-size 1.4rem
+                line-height 2rem
+                color #172419
+                display inline-block
+                margin 0 2px 0 0
+            .bull
+                color rgba(23, 36, 25, 0.48)
 
 .radio-list-custom__title
     font-size 1.4rem
