@@ -32,6 +32,7 @@ a
                         font-size 1.4rem
                         line-height 2rem
                         color #172419
+
     .h-header
         box-shadow none
         border-radius 0
@@ -77,6 +78,7 @@ a
                     color #128127
                     .ph-caret-right
                         color #5C5C5C
+
     .auth
         padding-top 0
         color #172419
@@ -107,6 +109,7 @@ a
         .agree li
             font-size 1.6rem
             line-height 2.4rem
+
     .checkbox-list-var2
         .checkbox-view i
             font-size 14px
@@ -114,6 +117,7 @@ a
         input.checkbox:checked + .checkbox-view
             background #148F2B
             border-color #148F2B
+
     .new-app-form-wrap
         padding 0
         textarea
@@ -124,7 +128,7 @@ a
             font: 1.6rem $inter
             color #172419
             & + .float-label
-                top 6px
+                top 10px
             &:focus
                 color #172419
                 border-color rgba(18, 129, 39, 0.40)
@@ -155,6 +159,7 @@ a
                     background rgba(18, 129, 39,.08)
         .ph-check-bold
             color #128127
+
     .searchbox
         &.padd3
             padding-bottom 8px
@@ -168,6 +173,7 @@ a
         .ph-magnifying-glass
             font-size 1.6rem
             left 12px
+
     .radio-list
         &.noborder-wrap
             padding-bottom 16px
@@ -190,6 +196,7 @@ a
                 &:before
                     outline-color #148F2B
                     background #148F2B
+
     .nav-list
         & + .logout
             padding 12px 4px
@@ -197,6 +204,7 @@ a
             padding-left 40px
         svg
             left 4px
+
     .h-header .searchbox-filter-wrap .nav-list
         ul
             li.active
@@ -204,6 +212,10 @@ a
                     color #128127
                 i.ph-x
                     font-size 1.6rem
+
+    .filter-tags-horiz
+        &.mb-8
+            margin-bottom 8px
     .filter-tags-list
         li
             background rgba(0, 0, 0, 0.04)
@@ -217,14 +229,38 @@ a
                 border-color rgba(18, 129, 39, 0.40)
                 padding-left 28px
                 color #083911
+
     .statistics-list
+        &.no-border
+            li
+                margin-bottom 16px
+        li
+            margin-bottom 8px
+            &.with-bottom-border
+                border-bottom 1px solid rgba(0,0,0,.08)
+                padding-top 16px
+        .statistics-list_inner
+            border-radius 24px
+            border-color transparent
         .money-type
             color #172419
             .all
                 color #172419
+                .ph-caret-right
+                    margin-left 8px
+        .ct-chart-lines
+            .ct-chart-line-item
+                .line-text
+                    font-size 1.1rem
+                    line-height 1.6rem
+                    font-weight 500
+
     &.var2-content-bg
         .booking-item
             background #fff
+    .h-booking-wrap
+        &.pt-16
+            padding-top 16px
     .booking-item__filter
         padding 16px 0 8px
     .booking-item
@@ -284,6 +320,7 @@ a
         padding 0 0 1px
     .booking-item__price
         margin 0
+
     .clients-list
         &.with-borders-2
             margin-bottom 0
@@ -310,6 +347,7 @@ a
                 margin 0 2px 0 0
             .bull
                 color rgba(23, 36, 25, 0.48)
+
     .schedule_master_tbl
         margin-top 8px
     .sch-person-time
@@ -340,18 +378,25 @@ a
     .schedule-wrap_empty-btns li
         margin-left 0
         margin-right 0
+
     .div-like-li
         &.wider-2
             padding-top 16px
             padding-bottom 16px
+
     .master-info
         .name
             &.color2
                 color #128127
+    .chosen
+        .master-info
+            color #128127
+
     .newapp-body__wrap
         &.padd2
             padding-top 16px
             padding-bottom 24px
+
     .visit-title
         padding 16px 0
     .visit-client__status
@@ -408,9 +453,56 @@ a
                 .ph
                 svg
                     margin 0
+
     .h-calendar
         max-width 336px
         padding 0 0 32px
+
+    .h-cash-wrap
+        padding 0
+        &.ptb-16
+            padding 16px 0 24px
+    .cash-milestones
+        h4
+            font-size 1.2rem
+            line-height 1.6rem
+            color #172419
+        .money
+            color #172419
+    .cash-item-wrap
+        padding-bottom 0
+        h4
+            color #172419
+    .dfl-var2
+        .cash-transactions__copy
+            flex-wrap nowrap
+            align-items flex-end
+            gap 8px
+        .cash-transactions__money
+            flex-shrink 0
+
+    .box-items-list
+        &.staff-list
+            .all-dop-2
+                color #128127
+            &.with-borders
+                li
+                    padding-top 4px
+                    padding-bottom 4px
+
+    .popup-default-list-choose
+        margin 0
+        padding 16px 0 0
+        left 0
+        li
+            margin 0
+            &.active
+                a
+                    background #E8F4EA
+        a
+            color #172419
+        .ph-check-bold
+            color #128127
 
 .h-calendar-inner
     .ui-datepicker
@@ -444,14 +536,21 @@ a
         border 1px solid transparent
         height 124px
         padding 28px 16px 16px
-        font: 1.6rem $sinter
+        font: 1.6rem $inter
         text-align left
         & + .float-label
-            top 6px
+            top 10px
         &:focus
             color #172419
             border-color rgba(18, 129, 39, 0.40)
             background rgba(0, 0, 0, 0.04)
+    .info-message
+        color #172419
+    &.pos-absolute-var2
+        &.mb-16
+            margin-bottom 16px
+        .abs-currency
+            color #172419
     &.with-float-label
         position relative
         input.text
@@ -473,13 +572,13 @@ a
                 right 56px
         textarea
             & + .float-label
-                top 6px
+                top 10px
             &:focus
             &:not(:placeholder-shown)
                 & + .float-label
                     font-size 1.2rem
                     line-height 1.8rem
-                    top 4px
+                    top 6px
             &:not(:placeholder-shown) + .float-label
                 color #172419
         .float-label
@@ -578,6 +677,8 @@ button.btn
         .popup-inner
             background rgba(255, 255, 255, 0.72)
             backdrop-filter blur(20px)
+    .popup-body-inner-top
+        padding-top 16px
 .modal-popup
     .popup-header
         min-height 64px
