@@ -120,6 +120,8 @@ a
 
     .new-app-form-wrap
         padding 0
+        &.pt-16
+            padding-top 16px
         textarea
             background rgba(0, 0, 0, 0.04)
             border 1px solid transparent
@@ -143,6 +145,9 @@ a
                 color #172419
             &:focus + .float-label
                 color #128127
+        .masters-days-times-wrap
+            &.nobord
+                border-bottom 0
     .new-app-form-footer
         background #fff
         border-top none
@@ -159,6 +164,11 @@ a
                     background rgba(18, 129, 39,.08)
         .ph-check-bold
             color #128127
+    .new-app-form-box
+        &.pt-16
+            padding-top 16px
+        .radio-list
+            margin-right 0
 
     .searchbox
         &.padd3
@@ -173,10 +183,20 @@ a
         .ph-magnifying-glass
             font-size 1.6rem
             left 12px
+        .info-message
+            margin 8px 0 0
+            font-size 1.4rem
+            line-height 2rem
 
     .radio-list
+        border-radius 16px
+        background #D0E9D5
         &.noborder-wrap
             padding-bottom 16px
+            li
+                font-size 1.6rem
+                line-height 2.4rem
+                color #172419
             input.radio
                 &:checked + label
                     border-color #148F2B
@@ -184,9 +204,19 @@ a
                     color #fff
             &:last-child
                 padding-bottom 32px
+            label
+                background rgba(0, 0, 0, 0.04)
+                border-radius 16px
+        li
+            font-size 1.4rem
+            line-height 2rem
+            color #172419
         label
-            background rgba(0, 0, 0, 0.04)
-            border-radius 16px
+            border-radius 12px
+        input.radio
+            &:checked + label
+                border-color transparent
+                color #172419
     .radio-list-custom
         .radio-label
             color #172419
@@ -231,6 +261,9 @@ a
                 color #083911
 
     .statistics-list
+        &.ptb-0
+            padding-top 0
+            padding-bottom 0
         &.no-border
             li
                 margin-bottom 16px
@@ -239,6 +272,8 @@ a
             &.with-bottom-border
                 border-bottom 1px solid rgba(0,0,0,.08)
                 padding-top 16px
+            &.mb-8
+                margin-bottom 8px
         .statistics-list_inner
             border-radius 24px
             border-color transparent
@@ -383,11 +418,38 @@ a
         &.wider-2
             padding-top 16px
             padding-bottom 16px
+        .ph-caret-up
+        .ph-caret-down
+            display block !important
+            color #5c5c5c
+            margin-left auto
+
+    .master-day-time
+        h4
+            &.mt-0
+                margin-top 0
+        .d-time
+            li
+                border-radius 16px
+                border none
+                background rgba(0, 0, 0, 0.04)
+                line-height 40px
+                &.active
+                    background #E8F4EA
+                    color #128127
 
     .master-info
         .name
             &.color2
                 color #128127
+        .valign
+            &.w-break
+                white-space wrap
+                .name
+                .phone
+                    display block
+                .phone
+                    margin-top 4px
     .chosen
         .master-info
             color #128127
@@ -398,26 +460,43 @@ a
             padding-bottom 24px
 
     .visit-title
-        padding 16px 0
+        padding 16px 0 0
     .visit-client__status
         font-size 1.4rem
         line-height 2rem
     .visit-body__item
-        padding-bottom 16px
+        padding 16px 0
     .visit-body__client
-        padding 0
+        padding 0 104px 0 0
         margin 0 0 16px
         position relative
     .visit-body__client-name
         font-weight 600
         color #172419
+        &.mb-8
+            margin-bottom 8px
     .visit-body__client-phone
         color #172419
+        &.fs-16
+            font-size 1.6rem
+            line-height 2.4rem
+        &.mb-2
+            margin-bottom 2px
+    .visit-body__client-email
+        display block
+        font-size 1.4rem
+        line-height 2rem
+        color #172419
+        &.fs-16
+            font-size 1.6rem
+            line-height 2.4rem
+        &.mb-2
+            margin-bottom 2px
     .visit-body__client-icons
         position absolute
-        top 50%
+        top 0
         right 0
-        transform translateY(-50%)
+        //transform translateY(-50%)
         padding 0 8px
         display flex
         align-items center
@@ -434,6 +513,9 @@ a
         font-size 1.4rem
         line-height 2rem
         font-weight 600
+        &.fs-16
+            font-size 1.6rem
+            line-height 2.4rem
     .visit-footer__btns
         padding-bottom 24px
         .btn
@@ -453,6 +535,71 @@ a
                 .ph
                 svg
                     margin 0
+
+    .b-app-item
+        background #E8F4EA
+        border none
+        padding 12px 8px
+        .b-app-item_foot-list
+            li
+                font-size 1.4rem
+                line-height 2rem
+                position relative
+                margin 0 1px 0 0
+                padding 0 12px 0 0
+                color #172419
+                &:after
+                    display block
+                    content "•"
+                    position absolute
+                    top 0
+                    right 0
+                    color rgba(23, 36, 25, 0.48)
+                &:last-child
+                    margin 0
+                    padding 0
+                    &:after
+                        display none
+                .b-app-price
+                    font-size 1.4rem
+                    line-height 2rem
+                    font-weight 400
+                    color #172419
+        .b-app-item-closer
+            top 16px
+            color #172419
+            opacity .48
+            .ph-x
+                display block
+                color #172419
+
+    .new-app-form-services-box
+        top 0
+        margin 0
+        padding 0
+        border-bottom none
+
+    .b-app-item-symbol
+        background #E8F4EA
+    .b-app-item-symbol-title
+        color #172419
+    .b-app-item-symbol-circle
+        width 24px
+        height 24px
+        flex-shrink 0
+        border-radius 50%
+        background #5c5c5c
+    .b-app-item-symbol-remove
+        font-size 1.6rem
+        color #172419
+        opacity .48
+    .custom-sett-icon-circle
+        display block
+        width 24px
+        height 24px
+        flex-shrink 0
+        border-radius 50%
+        background #5c5c5c
 
     .h-calendar
         max-width 336px
@@ -503,6 +650,38 @@ a
             color #172419
         .ph-check-bold
             color #128127
+
+    .add-new-client-from
+        padding 16px 0
+    .add-new-client-title
+        font-size 1.8rem
+        line-height 2.8rem
+        font-weight 600
+        margin 0 0 16px
+
+    .ch-time-edit-wrap
+        &.var2-color
+            color #172419
+    .ch-time-edit-input
+        border none
+        background rgba(0, 0, 0, 0.04)
+    .na-sr__item.chosen
+        .na-sr__item-dop
+        .na-sr__item-title
+            color #083911
+        .ch-time-edit-input
+            background #E8F4EA
+        .ch-time-edit-plus
+        .ch-time-edit-minus
+            color #128127
+    .na-sr__item-dop
+        color #172419
+    .na-sr__item-dop-price
+    .na-sr__item-dop-time
+    .na-sr__item-dop-bull
+        margin 0 1px 0 0
+    .na-sr__item-dop-bull
+        color rgba(23, 36, 25, 0.48)
 
 .h-calendar-inner
     .ui-datepicker
@@ -693,6 +872,10 @@ button.btn
     font-size 1.6rem
     .ph
         opacity .48
+.popup-top-icon
+    font-size 3.2rem
+    color #172419
+    opacity .72
 
 .popup-footer
     //padding 0
@@ -1067,6 +1250,9 @@ button.btn
                 margin-left 16px
             a.head-top-icon-plus
                 margin 0
+    a.head-top-icon
+        &.div-block
+            color #128127
     .head-top-dots-popup-wrap
         margin-left 20px
 .head-dop
