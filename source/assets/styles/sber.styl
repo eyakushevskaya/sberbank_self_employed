@@ -21,6 +21,13 @@ a
         box-sizing border-box
         min-height 100%
         background #F1F1F1
+        &.h-100
+            height 100%
+            display flex
+            flex-direction column
+            .h-content-wrap
+                flex-grow 1
+                overflow auto
     &.popup-inner
         &.modal-look
             padding-top 68px
@@ -271,6 +278,11 @@ a
                 border-color rgba(18, 129, 39, 0.40)
                 padding-left 28px
                 color #083911
+            &.w-x
+                background-image url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAGFBMVEUAAAAWJxwWIRwZJhkVJhkZIRkVIRkXJBn3t35EAAAACHRSTlMALi49PT09eri4jjIAAABmSURBVHja1dMxDgAhCAVRQNx//xtvYQNjtJeSN40J2kPjft+4lN0/qRYhKeGKupirqD4Ks6CzoLOgs6CzgO8FnMXB2/uVd2dBHxMF3YwFnQWdBZ0F/Vj48lbwongfuKgIw0Q89Od+18wESUKmSSkAAAAASUVORK5CYII=")
+                background-position-x right 12px
+                padding-left 12px
+                padding-right 40px
 
     .statistics-list
         &.ptb-0
@@ -303,9 +315,12 @@ a
                     font-weight 500
 
     &.var2-content-bg
-        .booking-item
+        .h-content-wrap .booking-item
             background #fff
     .h-booking-wrap
+        &.pt-16
+            padding-top 16px
+    .popup-booking-wrap
         &.pt-16
             padding-top 16px
     .booking-item__filter
@@ -462,6 +477,11 @@ a
                     display block
                 .phone
                     margin-top 4px
+                .name-kol
+                    color rgba(23, 36, 25, 0.72)
+                    margin-left 5px
+                .name-kol-2
+                    color #128127
     .chosen
         .master-info
             color #128127
@@ -528,6 +548,10 @@ a
         &.fs-16
             font-size 1.6rem
             line-height 2.4rem
+        &.fw-normal
+            font-weight 400
+    .visit-body__info-wrap
+        padding 0 0 16px
     .visit-footer__btns
         padding-bottom 24px
         .btn
@@ -667,6 +691,10 @@ a
 
     .add-new-client-from
         padding 16px 0
+        &.pt-0
+            padding-top 0
+        &.pb-0
+            padding-bottom 0
     .add-new-client-title
         font-size 1.8rem
         line-height 2.8rem
@@ -679,18 +707,28 @@ a
     .ch-time-edit-input
         border none
         background rgba(0, 0, 0, 0.04)
-    .na-sr__item.chosen
-        .na-sr__item-dop
-        .na-sr__item-title
-            color #083911
-        .ch-time-edit-input
-            background #E8F4EA
-        .ch-time-edit-plus
-        .ch-time-edit-minus
-            color #128127
+    .na-sr__item
+        &.chosen
+            .na-sr__item-dop
+            .na-sr__item-title
+                color #083911
+            .ch-time-edit-input
+                background #E8F4EA
+            .ch-time-edit-plus
+            .ch-time-edit-minus
+                color #128127
+        &.fw-wrap
+            flex-wrap wrap
     .na-sr__item-col1
         &.flexible
             width auto
+    .na-sr__item-col2
+        &.d-flex
+            display flex
+            gap 0 16px
+            align-items center
+    .na-sr__item-row
+        width 100%
     .na-sr__item-dop
         color #172419
     .na-sr__item-dop-price
@@ -708,11 +746,18 @@ a
         line-height 1.6rem
         letter-spacing -0.22px
         color #1D8722
+    .na-sr__item-dop-copy
+        color rgba(23, 36, 25, 0.72)
     .na-sr__item-icon
         display flex
         align-items center
         height 2.4rem
         color #5C5C5C
+    .na-sr__item-number
+        font-size 1.6rem
+        line-height 2.4ren
+        font-weight 600
+        color #172419
 
     .upload-image-wrap
         height 164px
