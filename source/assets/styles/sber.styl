@@ -186,6 +186,8 @@ a
     .new-app-form-box
         &.pt-16
             padding-top 16px
+        &.pt-32
+            padding-top 32px
         .radio-list
             margin-right 0
 
@@ -287,6 +289,10 @@ a
     .statistics-list
         &.ptb-0
             padding-top 0
+            padding-bottom 0
+        &.pt-8
+            padding-top 8px
+        &.pb-0
             padding-bottom 0
         &.no-border
             li
@@ -412,6 +418,13 @@ a
 
     .schedule_master_tbl
         margin-top 8px
+        .sch-m-th-title-in
+            text-align center
+            font-size 1.2rem
+            line-height 1.6rem
+            font-weight 500
+            color #172419
+            padding 0 0 8px
     .sch-person-time
         font-size 1.1rem
         line-height 1.6rem
@@ -445,6 +458,8 @@ a
         &.wider-2
             padding-top 16px
             padding-bottom 16px
+        &.mt-16
+            margin-top 16px
         .ph-caret-up
         .ph-caret-down
             display block !important
@@ -573,11 +588,16 @@ a
                     margin 0
             &.white-border
                 color #128127
+                .ph
+                    color #128127
+                svg
+                    path
+                        fill #128127
 
     .b-app-item
         background #E8F4EA
         border none
-        padding 12px 8px
+        padding 8px 16px
         .b-app-item_foot-list
             li
                 font-size 1.4rem
@@ -603,6 +623,28 @@ a
                     line-height 2rem
                     font-weight 400
                     color #172419
+        .b-app-item_foot-dls-wrap
+            display flex
+            gap 8px 24px
+            align-items flex-start
+            flex-wrap wrap
+            padding 0 0 6px
+        .b-app-item_foot-dl
+            dt
+                font-size 1.2rem
+                line-height 1.6rem
+                font-weight 400
+                color rgba(23, 36, 25, 0.72)
+                margin 0 0 4px
+            dd
+                font-size 1.4rem
+                line-height 2rem
+                font-weight 400
+                color #172419
+                display flex
+                align-items center
+                &.fw-600
+                    font-weight 600
         .b-app-item-closer
             top 16px
             color #172419
@@ -874,6 +916,8 @@ a
         padding-bottom 0
         &.pb-24
             padding-bottom 24px
+    &.pt-8
+        padding-top 8px
 
 .custom-form__field-switch
     label
@@ -932,6 +976,17 @@ a
         top 0
         left 0
         border-radius 24px
+.custom-form__field-avatar-actions
+    padding 16px 0 0
+    display flex
+    align-items center
+    justify-content center
+    gap 16px
+    font-size 1.6rem
+    line-height 2.4rem
+    font-weight 500
+    li
+        padding 14px 0
 .btn
     border-radius 16px
     background #148F2B
@@ -946,6 +1001,14 @@ a
     &.white-border
         border-color #148F2B
         color #128127
+        font 500 1.6rem/2.4rem $inter
+    &.transparent-border
+        border 1px solid #148F2B
+        border-radius 16px
+        background transparent
+        color #128127
+        font 500 1.6rem/2.4rem $inter
+        padding 12px 24px
 button.btn
     font-family $inter
 
@@ -953,10 +1016,9 @@ button.btn
     &.modal-popup
         padding-top 64px
     &.auto-suggest-popup
-        background none
+        background rgba(0, 0, 0, 0.40)
         .popup-inner
-            background rgba(255, 255, 255, 0.72)
-            backdrop-filter blur(20px)
+            background rgba(255, 255, 255, 1)
     .popup-body-inner-top
         padding-top 16px
 .modal-popup
@@ -1142,6 +1204,9 @@ button.btn
         &.bg5
             .b-lk-settings-list_item
                 background #F5ECF8
+        &.bg6
+            .b-lk-settings-list_item
+                background #E8FFF5
 
 .schedule-table
     table-layout auto
@@ -1366,9 +1431,30 @@ button.btn
                 margin-left 16px
             a.head-top-icon-plus
                 margin 0
+            a.head-top-icon-notifications
+                margin-left 20px
+                color rgba(23, 36, 25, 0.72)
+                position relative
+                .badge
+                    box-sizing border-box
+                    position absolute
+                    top -4px
+                    left 20px
+                    min-width 16px
+                    height 16px
+                    padding 0 3px
+                    border-radius 999px
+                    background #FF3B38
+                    font-size 1.1rem
+                    line-height 16px
+                    font-weight 500
+                    color #fff
+                    text-align center
     a.head-top-icon
         &.div-block
             color #128127
+        &.color-2
+            color rgba(23, 36, 25, 0.72)
     .head-top-dots-popup-wrap
         margin-left 20px
 .head-dop
@@ -1376,6 +1462,10 @@ button.btn
         .head-top-icon
             font-size 3.2rem
             color #128127
+        .head-dop-period
+            font-weight 500
+            color #128127
+            min-height 48px
     &.w-padding-2
         padding 0 0 4px
         .head-dop-period
@@ -1384,6 +1474,71 @@ button.btn
         .head-top-icon
             font-size 1.6rem
             color #5C5C5C
+
+
+.sett__tariff-card
+    background rgba(0, 0, 0, 0.04)
+    border-radius 16px
+    margin 0 0 8px
+    padding 16px
+.sett__tariff-card-header
+    display flex
+    align-items flex-start
+    gap 0 8px
+    padding 0 0 12px
+.sett__tariff-card-header-icon
+    width 32px
+    height 32px
+    img
+        display block
+        width 100%
+        height 100%
+        object-fit cover
+.sett__tariff-card-header-title
+    font-size 1.6rem
+    line-height 2.4rem
+    font-weight 600
+    margin 0
+    padding 4px 0 0
+.sett__tariff-card-header-title-details
+    display block
+    margin 2px 0 0
+    font-size 1.4rem
+    line-height 2rem
+    font-weight 500
+.sett__tariff-card-body
+    padding 12px 0 8px
+.sett__tariff-card-body-list
+    font-size 1.4rem
+    line-height 2rem
+    li
+        margin 0 0 12px
+    h3
+        display flex
+        align-items center
+        gap 0 4px
+        font-size 1.4rem
+        line-height 2rem
+        font-weight 600
+        margin 0 0 4px
+        .ph
+            font-size 2.4rem
+            color #172419
+.sett__tariff-card-footer
+    display flex
+    align-items center
+.sett__tariff-card-footer-summ
+    font-size 1.6rem
+    line-height 2.4rem
+    font-weight 600
+    display flex
+    align-items center
+.sett__tariff-card-footer-period
+    display block
+    font-size 1.4rem
+    line-height 2rem
+.sett__tariff-card-footer-col2
+    margin-left auto
 
 
 .h-calendar-inner .ui-widget.ui-widget-content {

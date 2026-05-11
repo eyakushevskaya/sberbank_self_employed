@@ -43,23 +43,29 @@
                                 <input class="text" type="text" placeholder="" value="Окрашивание Airtouch" />
                                 <label class="float-label">Услуга</label>
                             </div>
-                            <div class="custom-form__field block relative with-float-label padd3">
-                                <input class="text" type="text" placeholder="" value="20 000 ₽" />
-                                <label class="float-label">Стоиость</label>
+                            <div class="custom-form__field pt-8 relative">
+                                <div class="custom-form__field-switch">
+                                    <label>
+                                        <input class="checkbox" type="checkbox" checked />
+                                        <span class="switcher"></span>
+                                        Цена «от»
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="custom-form__field with-float-label like-tbl padd3-var3">
+                                <div class="custom-form__field-inn">
+                                    <input class="text" type="text" placeholder="" value="20 000 ₽" />
+                                    <label class="float-label">Стоимость от</label>
+                                </div>
+                                <div class="custom-form__field-inn">
+                                    <input class="text" type="text" placeholder="" value="25 000 ₽" />
+                                    <label class="float-label">До</label>
+                                </div>
                             </div>
                             <div class="custom-form__field block padd3">
                                 <span class="info-message">
                                     Если услуга предоставляется бесплатно, оставьте поле пустым
                                 </span>
-                                <div class="custom-form__field block padd3">
-                                    <div class="custom-form__field-switch">
-                                        <label>
-                                            <input class="checkbox" type="checkbox">
-                                            <span class="switcher"></span>
-                                            Цена «от»
-                                        </label>
-                                    </div>
-                                </div>
                             </div>
                             <ul class="box-items-list staff-list no-padding with-borders">
                                 <li class="chosen">
@@ -73,7 +79,7 @@
                                     </a>
                                 </li>
                             </ul>
-                            <div class="custom-form__field block relative">
+                            <div class="custom-form__field pt-8 relative">
                                 <div class="custom-form__field-switch">
                                     <label>
                                         <input class="checkbox" type="checkbox" checked />
