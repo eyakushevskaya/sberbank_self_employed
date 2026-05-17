@@ -45,4 +45,17 @@ $(function() {
         }
     });
 
+    const colorPicker = document.querySelector('.js-color-picker');
+    const colorInput = document.querySelector('.js-color-picker-input');
+    const colorBadge = document.querySelector('.js-color-picker-badge');
+
+    if (colorPicker && colorInput && colorBadge) {
+        colorPicker.addEventListener('input', (e) => {
+            const color = e.target.value;
+
+            colorInput.value = color;
+            colorBadge.style.backgroundColor = color;
+        });
+    }
+
 });
