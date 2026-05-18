@@ -166,6 +166,8 @@ a
         padding 0
         &.pt-16
             padding-top 16px
+        &.pt-8
+            padding-top 8px
         textarea
             background rgba(0, 0, 0, 0.04)
             border 1px solid transparent
@@ -307,6 +309,10 @@ a
     .filter-tags-horiz
         &.mb-8
             margin-bottom 8px
+        &.pt-8
+            padding-top 8px
+        &.pb-0
+            padding-bottom 0
     .filter-tags-list
         li
             background rgba(0, 0, 0, 0.04)
@@ -325,6 +331,20 @@ a
                 background-position-x right 12px
                 padding-left 12px
                 padding-right 40px
+            &.c-black
+                color #172419
+            &.d-fl
+                display flex
+                align-items center
+                gap: 0 4px
+        .filter-tags-list-badge
+            font-size 1rem
+            line-height 1.4rem
+            font-weight 600
+            background #FF3B38
+            border-radius 999px
+            padding 2px 4px
+            color #fff
 
     .statistics-list
         &.ptb-0
@@ -349,10 +369,23 @@ a
             border-color transparent
         .money-type
             color #172419
+            &.fw-600
+                font-weight 600
             .all
                 color #172419
                 .ph-caret-right
                     margin-left 8px
+                .caret-icon-wrap
+                    display flex
+                    align-items center
+                    justify-content center
+                    margin-left 16px
+                    width 24px
+                    height 24px
+                    background rgba(0, 0, 0, 0.04)
+                    border-radius 999px
+                    font-size 1.6rem
+                    color rgba(23, 36, 25, 0.72)
         .ct-chart-lines
             .ct-chart-line-item
                 .line-text
@@ -1012,6 +1045,9 @@ a
     margin 16px 0
 
 .custom-form__field-switch
+    &.fw-600
+        label
+            font-weight 600
     label
         padding-left 52px
         color #172419
@@ -1686,6 +1722,40 @@ button.btn
         margin 0 0 4px
         .ph
             font-size 3.2rem
+
+.sett__notification-wrap
+    padding 0 0 40px
+.sett__notification-card
+    padding 0 0 28px
+    &.selected
+        .sett__notification-card-subcopy
+            color #083911
+.sett__notification-card-subcopy
+    font-size 1.4rem
+    line-height 2rem
+    font-weight 500
+    color rgba(23, 36, 25, 0.72)
+    margin 2px 0 0
+.sett__notification-card-list
+    padding 12px 0 0
+    li
+        margin 0 0 4px
+        display flex
+        align-items flex-start
+        gap 0 8px
+.sett__notification-card-list-icon
+    font-size 2rem
+    color #172419
+    opacity .72
+.sett__notification-card-list-copy
+    font-size 1.4rem
+    line-height 2rem
+.sett__notification-card-channels
+    padding 12px 0 0
+.sett__notification-card-channels-subtitle
+    font-size 1.4rem
+    line-height 2rem
+    font-weight 500
 
 .glyphs_list
     display flex
