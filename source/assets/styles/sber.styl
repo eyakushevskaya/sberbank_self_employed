@@ -132,6 +132,9 @@ a
             &.with-float-label
                 input.reset
                     top 21px
+                input.text
+                    &:focus ~ input.reset
+                        right 56px
             &.error
                 input.text
                     background rgba(255, 59, 56, 0.08)
@@ -168,6 +171,8 @@ a
             padding-top 16px
         &.pt-8
             padding-top 8px
+        &.pb-60
+            padding-bottom 60px
         textarea
             background rgba(0, 0, 0, 0.04)
             border 1px solid transparent
@@ -362,8 +367,13 @@ a
             &.with-bottom-border
                 border-bottom 1px solid rgba(0,0,0,.08)
                 padding-top 16px
+            &.with-top-border
+                border-top 1px solid rgba(0, 0, 0, 0.12)
+                padding-top 16px
             &.mb-8
                 margin-bottom 8px
+            &.mb-0
+                margin-bottom 0
         .statistics-list_inner
             border-radius 24px
             border-color transparent
@@ -850,6 +860,9 @@ a
                 color #128127
         &.fw-wrap
             flex-wrap wrap
+    .na-sr__item-title
+        &.mb-0
+            margin-bottom 0
     .na-sr__item-col1
         &.flexible
             width auto
@@ -858,8 +871,12 @@ a
             display flex
             gap 0 16px
             align-items center
+            &.gap-4
+                gap 0 4px
     .na-sr__item-row
         width 100%
+        &.pt-16
+            padding-top 16px
     .na-sr__item-dop
         color #172419
     .na-sr__item-dop-price
@@ -877,8 +894,21 @@ a
         line-height 1.6rem
         letter-spacing -0.22px
         color #1D8722
+        &.red
+            background rgba(255, 59, 56, 0.08)
+            color #E63532
+        &.fs-12
+            font-size 1.2rem
+            line-height 1.6rem
+            font-weight 500
+            padding-top 4px
+            padding-bottom 4px
     .na-sr__item-dop-copy
         color rgba(23, 36, 25, 0.72)
+        display block
+        margin 0 0 2px
+        &:last-child
+            margin 0
     .na-sr__item-icon
         display flex
         align-items center
@@ -977,7 +1007,18 @@ a
             &:focus ~ input.reset
                 background url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAQAAADZc7J/AAAAkElEQVR42u2USwrAIAxEPWpuoheQObKlSC225tsunXXeI+iQlHb+TaVKH2YqoaEhSzjyOcMo0AWCouNo4HZAkRQDL9KKrMKE8wozvla48LfCjc+KED4pYvhDUULFHssr7dTxiOJ+OrmdKq4X3NR5l2L972YFXxuTQm6dqqik1eZSyBepGNrJXiSCelQtMzvOHJuWALADA3RDAAAAAElFTkSuQmCC") 0 0 no-repeat
                 background-size 16px 16px
-                right 56px
+                right 22px
+        input.reset
+            width 16px
+            height 16px
+            margin 0
+            padding 0
+            border none
+            background 0 0
+            -webkit-appearance none
+            position absolute
+            top 21px
+            right 16px
         textarea
             & + .float-label
                 top 10px
@@ -1037,6 +1078,8 @@ a
         padding-bottom 0
         &.pb-24
             padding-bottom 24px
+        .btn + .btn
+            margin-top 8px
     &.pt-8
         padding-top 8px
     &.with-color-picker
@@ -1245,6 +1288,9 @@ button.btn
     height 74px
     & + .global-chat-buble
         bottom 24px
+    &.min-h
+        min-height 74px
+        height auto
 
 .foot-nav
     padding 0 0 8px
@@ -1815,6 +1861,100 @@ button.btn
     font-size 1.4rem
     line-height 2rem
     font-weight 500
+
+.sett__summary-item
+    padding 0 0 12px
+.sett__summary-item-title
+    font-size 1.6rem
+    line-height 2.4rem
+    font-weight 500
+    margin 0 0 6px
+.sett__summary-item-list
+    li
+        display flex
+        align-items flex-start
+        font-size 1.4rem
+        line-height 2rem
+        margin 0 0 4px
+    .col2
+        margin-left auto
+        display flex
+        align-items center
+        gap 0 8px
+    .sett__summary-item-summ
+        display flex
+        align-items center
+    .sett__summary-item-x
+        width 24px
+        height 24px
+        background rgba(0, 0, 0, 0.04)
+        border-radius 999px
+        display flex
+        align-items center
+        justify-content center
+        font-size 1.6rem
+        color rgba(23, 36, 25, 0.48)
+    .sett__summary-item-badge
+        border-radius 999px
+        background #FF3B38
+        font-size 1rem
+        line-height 1.4rem
+        font-weight 600
+        color #fff
+        padding 2px 4px
+
+.sett__success-item
+    padding 0 0 16px
+    text-align center
+.sett__success-item-icon
+    display flex
+    align-items center
+    justify-content center
+    width 64px
+    height 64px
+    border-radius 999px
+    background #E8F4EA
+    margin 0 auto 16px
+    font-size 2.4rem
+    color #148F2B
+.sett__success-item-title
+    font-size 2.4rem
+    line-height 125%
+    font-weight 600
+    margin 0 0 4px
+.sett__success-item-copy
+    font-size 1.4rem
+    line-height 2rem
+    color rgba(23, 36, 25, 0.72)
+
+.sett__messenger-info
+    font-size 1.6rem
+    line-height 2.4rem
+    padding 0 0 16px
+    h2
+        font-size 1.8rem
+        line-height 2.8rem
+        font-weight 600
+        margin 0 0 2px
+    p
+        margin 0
+        & + p
+            margin 16px 0 0
+    ul.bulls
+        padding 14px 0 0
+        li
+            display flex
+            align-items flex-start
+            gap 0 5px
+.sett__messenger-info-qr
+    text-align center
+    padding 16px 0
+    img
+        display block
+        max-width 100%
+        object-fit cover
+        margin 0 auto
+
 
 .glyphs_list
     display flex
