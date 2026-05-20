@@ -173,6 +173,8 @@ a
             padding-top 8px
         &.pb-60
             padding-bottom 60px
+        &.pb-40
+            padding-bottom 40px
         textarea
             background rgba(0, 0, 0, 0.04)
             border 1px solid transparent
@@ -215,6 +217,10 @@ a
         padding-top 16px
     .newapp-title
         font-weight 600
+        &.t-ellipsis
+            white-space nowrap
+            overflow hidden
+            text-overflow ellipsis
     .newapp-popup-list-choose
         li
             margin 0
@@ -1251,6 +1257,10 @@ button.btn
 .modal-popup
     .popup-header
         min-height 64px
+        flex-wrap nowrap
+        gap 0 16px
+    .popup-closer
+        flex-shrink 0
     .popup-inner
         max-height calc(100% - 64px)
         border-radius 24px 24px 0 0
@@ -1870,6 +1880,10 @@ button.btn
     font-weight 500
     margin 0 0 6px
 .sett__summary-item-list
+    &.fs-16
+        li
+            font-size 1.6rem
+            line-height 2.4rem
     li
         display flex
         align-items flex-start
@@ -1902,6 +1916,10 @@ button.btn
         font-weight 600
         color #fff
         padding 2px 4px
+        &.fs-12
+            font-size 1.2rem
+            line-height 1.6rem
+            padding 4px 6px
 
 .sett__success-item
     padding 0 0 16px
@@ -1989,7 +2007,7 @@ button.btn
         color #fff
         .tariff__card-list
             li
-                color #fff
+                color rgba(255, 255, 255, 0.72)
                 &:after
                     color #fff
         .tariff__card-details
@@ -1999,6 +2017,9 @@ button.btn
             background transparent
             border-color #fff
             color #fff
+        .tariff__card-added-close
+            background rgba(255, 255, 255, 0.48)
+            opacity 1
 .tariff__card-title
     font-size 1.6rem
     line-height 2.4rem
@@ -2027,7 +2048,6 @@ button.btn
             position absolute
             top 0
             right 0
-            color #75B872
 .tariff__card-details
     font-size 1.4rem
     line-height 2rem
@@ -2048,6 +2068,61 @@ button.btn
     line-height 1.6rem
     font-weight 500
     color #128127
+.tariff__card-added
+    display flex
+    align-items center
+    padding 12px 0
+    gap 8px
+.tariff__card-added-icon
+    font-size 2.4rem
+.tariff__card-added-copy
+    font-size 1.6rem
+    line-height 2.4rem
+    font-weight 500
+.tariff__card-added-close
+    margin-left auto
+    display flex
+    align-items center
+    justify-content center
+    width 24px
+    height 24px
+    border-radius 999px
+    background rgba(0, 0, 0, 0.04)
+    font-size 1.6rem
+    color #172419
+    opacity .48
+
+.tariff__details-subtitle
+    font-size 1.6rem
+    line-height 2.4rem
+    margin 0 0 16px
+.tariff__details-list
+    li
+        display flex
+        align-items flex-start
+        padding 0 0 16px
+        gap 0 8px
+        font-size 1.4rem
+        line-height 2rem
+        &:last-child
+            padding 0
+    .tariff__details-list-icon
+        width 32px
+        flex-shrink 0
+        svg
+            display block
+        .ph
+            font-size 3.2rem
+            color #172419
+            opacity .72
+    h4
+        font-size 1.6rem
+        line-height 2.4rem
+        font-weight 600
+        margin 4px 0 0
+    p
+        margin 0 0 4px
+
 
 
 .content-round-hr
