@@ -214,6 +214,8 @@ a
         padding-bottom 24px
         height auto
         min-height 80px
+        .btn + .btn
+            margin-top 8px
     .new-app-form-footer-agree
         font-size 1.4rem
         line-height 2rem
@@ -677,6 +679,8 @@ a
         padding 0 0 16px
     .visit-footer__btns
         padding-bottom 24px
+        &.pb-0
+            padding-bottom 0
         .btn
             font-size 1.6rem
             line-height 2.4rem
@@ -996,6 +1000,15 @@ a
             background rgba(0, 0, 0, 0.04)
     .info-message
         color #172419
+        &.pb-0
+            padding-bottom 0
+        &.pt-2
+            padding-top 2px
+        &.pt-4
+            padding-top 4px
+        &.f-s-16
+            font-size 1.6rem
+            line-height 2.4rem
     &.pos-absolute-var2
         &.mb-16
             margin-bottom 16px
@@ -1377,6 +1390,8 @@ button.btn
         margin-bottom 4px
     &.mb-0
         margin-bottom 0px
+    &.mt-0
+        margin-top 0
     &.pt-16
         padding-top 16px
     &.d-fl
@@ -1985,6 +2000,95 @@ button.btn
         max-width 100%
         object-fit cover
         margin 0 auto
+
+.sett__app-online-link
+    font-size 1.6rem
+    line-height 2.4rem
+    h3
+        font-size 1.8rem
+        line-height 2.8rem
+        font-weight 600
+        margin 0 0 8px
+
+.sett__app-online-item-main
+    padding 0 0 16px
+    font-size 1.6rem
+    line-height 2.4rem
+    h2
+        font-size 2rem
+        line-height 2.4rem
+        font-weight 600
+        margin 0 0 4px
+    p
+        margin 0 0 16px
+.sett__app-online-item-picture
+    margin 0 0 16px
+    img
+        display block
+        width 100%
+        height 164px
+        border-radius 24px
+        object-fit cover
+        &.h-185
+            height 185px
+.sett__app-online-item
+    padding 0 0 32px
+    &:has(+ .content-round-hr)
+        padding 0
+    &:last-child
+        padding 0
+    h3
+        font-size 1.8rem
+        line-height 2.8rem
+        font-weight 600
+        margin 0 0 16px
+.sett__app-online-item-list-colored
+    padding 0 0 8px
+    &:last-child
+        padding 0
+    li
+        margin 0 0 8px
+        padding 16px
+        border-radius 16px
+        &:last-child
+            margin 0
+        &.bg1
+            background #FAF0F3
+        &.bg2
+            background #FDFAE6
+        &.bg3
+            background #E8FFF5
+        &.bg4
+            background #F2F7FC
+.sett__app-online-item-list-icon
+    display block
+    width 32px
+    flex-shrink 0
+    font-size 3.2rem
+    margin 0 0 12px
+.sett__app-online-item-list-copy
+    font-size 1.4rem
+    line-height 2rem
+    color rgba(23, 36, 25, 0.72)
+    h4
+        font-size 1.6rem
+        line-height 2.4rem
+        font-weight 600
+        margin 0 0 4px
+        color #172419
+.sett__app-online-item-list
+    li
+        margin 0 0 16px
+        display flex
+        align-items flex-start
+        gap 0 8px
+        &:last-child
+            margin 0
+    .sett__app-online-item-list-copy
+        padding 4px 0
+        color #172419
+        h4
+            margin-bottom 2px
 
 .glyphs_list
     display flex
