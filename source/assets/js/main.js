@@ -56,6 +56,16 @@ $(function() {
             colorInput.value = color;
             colorBadge.style.backgroundColor = color;
         });
-    }
+    };
+
+    const swiper = new Swiper('.sett__pictures-slider', {
+        slidesPerView: 1,
+        spaceBetween: 16,
+
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+    });
 
 });
