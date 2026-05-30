@@ -62,8 +62,16 @@
                                     <label class="float-label">Отчество</label>
                                 </div>
                                 <div class="custom-form__field block relative with-float-label">
-                                    <input class="text" type="number" placeholder="" />
-                                    <label class="float-label">Телефон</label>
+                                    <div class="phone-code" tabindex="0">
+                                        <label class="phone-code__label">Телефон</label>
+                                        <div class="phone-code__field">
+                                            <span class="phone-code__text">
+                                                +7
+                                                <i class="ph ph-caret-down"></i>
+                                            </span>
+                                            <input class="phone-code__input" type="number" required />
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="custom-form__field last block relative with-float-label">
                                     <input class="text" type="text" placeholder="" />

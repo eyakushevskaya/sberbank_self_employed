@@ -284,8 +284,23 @@ a
             &.active
                 a
                     background rgba(18, 129, 39,.08)
+                .code
+                    padding-right 24px
         .ph-check-bold
             color #128127
+        .newapp-popup-list-choose-copy
+            display flex
+            align-items center
+            flex-grow 1
+            gap 8px
+            .flag
+                width 32px
+                height 24px
+                font-size 3rem
+            .code
+                margin-left auto
+                white-space nowrap
+                text-align right
     .new-app-form-title
         &.mt-0
             margin-top 0
@@ -1771,6 +1786,81 @@ button.btn
         visibility visible
         pointer-events auto
         margin-top 22px
+
+
+
+.phone-code
+    box-sizing border-box
+    position relative
+    min-height 58px
+    padding 0
+    background rgba(0, 0, 0, 0.04)
+    border-radius 8px
+    border 1px solid transparent
+    &__label
+        font-size 1.6rem
+        line-height 2.4rem
+        color #172419
+        position absolute
+        top 17px
+        left 16px
+        transition all 175ms
+        pointer-events none
+    &__field
+        display flex
+        gap 0 8px
+        padding 0 16px
+        opacity 0
+        visibility hidden
+        pointer-events none
+        transition .2s ease
+    &__text
+        font 1.6rem $inter
+        color #172419
+        display flex
+        align-items center
+        gap 4px
+        flex-shrink 0
+        .ph
+            color rgba(23, 36, 25, 0.48)
+    &__input
+        border none
+        background transparent
+        outline none
+        font 1.6rem/2.4rem $inter
+        color #172419
+        padding 0
+        appearance none
+        -webkit-appearance none
+        flex-grow 1
+.phone-code:focus-within
+    border-color rgba(18, 129, 39, 0.40)
+    .phone-code__label
+        top 4px
+        transform translateY(0)
+        font-size 1.2rem
+        line-height 1.8rem
+        color #128127
+    .phone-code__field
+        opacity 1
+        visibility visible
+        pointer-events auto
+        margin-top 22px
+.phone-code:has(.phone-code__input:valid)
+    .phone-code__label
+        top 4px
+        transform translateY(0)
+        font-size 1.2rem
+        line-height 1.8rem
+    .phone-code__field
+        opacity 1
+        visibility visible
+        pointer-events auto
+        margin-top 22px
+
+
+
+
 
 .head-tabs-wrap
     padding 16px 0
