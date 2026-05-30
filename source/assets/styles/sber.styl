@@ -449,6 +449,9 @@ a
                 line-height 2.8rem
                 .ph-currency-rub-bold
                     font-size 1.8rem
+            .slash
+                font-weight 400
+                color rgba(23, 36, 25, 0.48)
             .all
                 color #172419
                 .ph-caret-right
@@ -567,6 +570,45 @@ a
             .bull
                 color rgba(23, 36, 25, 0.48)
 
+    .schedule_filters-wrap
+        padding 4px 0
+        display flex
+        align-items center
+        justify-content flex-start
+    .schedule_filters-left
+        display flex
+        align-items center
+        gap 4px
+        font-size 1.6rem
+        line-height 2.4rem
+    .schedule_filters-number
+        font-weight 600
+        display flex
+        align-items center
+        .ph-currency-rub
+            &:before
+                font-weight 600
+    .schedule_filters-slash
+        color rgba(23, 36, 25, 0.48)
+    .schedule_filters-right
+        margin-left auto
+    .schedule_filters-icons
+        display flex
+        gap 4px
+        .active
+            svg
+                path
+                    fill #148F2B
+                    fill-opacity 1
+        a
+            display block
+            padding 8px
+        svg
+            display block
+            path
+                fill #172419
+                fill-opacity 0.72
+
     .schedule_master_tbl
         margin-top 8px
         .sch-m-th-title-in
@@ -587,12 +629,23 @@ a
     .schedule-tbl
         .sch-it
             min-width 27px
+            font-size 1.2rem
+            line-height 1.6rem
             &:before
                 border-radius 8px
         .sch-it-pos-horiz
+            &.status-10
+                .sch-it-pos-horiz-color
+                    background #5BB2E0
+            &.status-15
+                .sch-it-pos-horiz-color
+                    background #F57F7D
+            &.status-20
+                .sch-it-pos-horiz-color
+                    background #75B872
             &.status-25
                 .sch-it-pos-horiz-color
-                    background #CFA7E2
+                    background #A58FD4
         .sch-it-pos-horiz-color
             border-radius 8px
         .sch-it-pos-horiz-top-bord
@@ -1738,12 +1791,21 @@ button.btn
         &.active
             border-radius 12px
             border-color #fff
-            color #128127
+            color #172419
             span.year
                 .underline
                     &:after
                         display none
+        &.not-active
+            opacity .4
+    span.month
+        font-size 1.4rem
+        line-height 2rem
+    span.day
+        font-size 1.6rem
+        line-height 2.4rem
     span.year
+        margin-top -4px
         .underline
             display inline-block
             padding 0 2px
