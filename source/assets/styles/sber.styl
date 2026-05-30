@@ -509,6 +509,7 @@ a
         &:last-child
             margin-bottom 0
         &.booking-item_cancel
+            background #F5F5F5
             .booking-item__time-time
             .booking-item__time-date
                 color #5c5c5c
@@ -529,34 +530,42 @@ a
         line-height 2rem
         font-weight 500
         gap 4px
-        padding 2px 0 18px
+        padding 2px 0
     .booking-item__time-time
         color #172419
     .booking-item__time-date
         margin-left 0
         color #172419
     .booking-item_completed
+        background #F4F9F4
         .booking-item__time-bull
             color #75b872
     .booking-item_current
+        background #FEF5F5
         .booking-item__time-bull
             color #f57f7d
     .booking-item_new
+        background #F2F9FD
         .booking-item__time-bull
             color #5bb2e0
     .booking-item_confirm
+        background #F2F9FD
         .booking-item__time-bull
             color #a58fd4
     .booking-item__client
         font-weight 600
-        margin-bottom 16px
+        margin 16px 0
     .booking-item__client-phone
         margin-top 2px
         font-weight 400
     .booking-item__service
         padding 0 0 1px
+    .booking-item__service_pr
+        &.fs-16
+            font-size 1.6rem
+            line-height 2.4rem
     .booking-item__price
-        margin 0
+        padding 0
 
     .clients-list
         &.with-borders-2
@@ -755,6 +764,9 @@ a
         color #172419
         &.mb-8
             margin-bottom 8px
+        &.fs-18
+            font-size 1.8rem
+            line-height 2.8rem
     .visit-body__client-phone
         color #172419
         &.fs-16
@@ -2560,7 +2572,22 @@ button.btn
     p
         margin 0 0 4px
 
-
+.contact-fixed-buble
+    background #2B9927
+    border-radius 32px 0 0 32px
+    outline 2px solid #fff
+    height 64px
+    position fixed
+    bottom 24px
+    right 0
+    z-index 999
+    display flex
+    align-items center
+    padding 0 16px 0 8px
+.contact-fixed-item
+    padding 8px
+    font-size 3.2rem
+    color #fff
 
 .content-round-hr
     height 40px
