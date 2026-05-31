@@ -278,6 +278,14 @@ a
             white-space nowrap
             overflow hidden
             text-overflow ellipsis
+    .newapp-data
+        margin-left auto
+        font-size 1.4rem
+        line-height 2rem
+        font-weight 500
+        padding 0 4px
+        flex-grow 1
+        text-align right
     .newapp-popup-list-choose
         li
             margin 0
@@ -363,6 +371,10 @@ a
             &:checked + label
                 border-color transparent
                 color #172419
+            &:disabled + label
+                opacity .4
+                border-color transparent
+                background none
     .radio-list-custom
         .radio-label
             color #172419
@@ -433,10 +445,14 @@ a
         &.ptb-0
             padding-top 0
             padding-bottom 0
+        &.pt-0
+            padding-top 0
         &.pt-8
             padding-top 8px
         &.pb-0
             padding-bottom 0
+        &.pb-8
+            padding-bottom 8px
         &.no-border
             li
                 margin-bottom 16px
@@ -469,6 +485,11 @@ a
                 color rgba(23, 36, 25, 0.48)
             .all
                 color #172419
+                &.fw-400
+                    font-weight 400
+                    .ph-currency-rub-bold
+                        &:before
+                            font-weight 400
                 .ph-caret-right
                     margin-left 8px
                 .caret-icon-wrap
@@ -698,11 +719,53 @@ a
             margin-top 16px
         &.mt-8
             margin-top 8px
+        &.pb-0
+            padding-bottom 0
         .ph-caret-up
         .ph-caret-down
             display block !important
             color #5c5c5c
             margin-left auto
+
+    .na-status-list
+        display flex
+        gap 4px
+        flex-wrap wrap
+        margin 0 0 8px
+        li
+            padding 2px 12px
+            font-size 1.4rem
+            line-height 2rem
+            border-radius 360px
+            &.status-new
+                background #D4ECF9
+                color #24475A
+            &.status-current
+                background #FFD0CF
+                color #623332
+            &.status-confirmed
+                background #DFD7EF
+                color #423955
+            &.status-complited
+                background #CCE7CB
+                color #2F4A2E
+    .na-status-title
+        margin 0 0 4px
+        h2
+            font-size 1.8rem
+            line-height 2.8rem
+            font-weight 600
+    .naf-hr
+        height 1px
+        background rgba(0, 0, 0, 0.12)
+    .naf-datas
+        dt
+            font-size 1.4rem
+            line-height 2rem
+            margin 0 0 2px
+        dd
+            font-size 1.6rem
+            line-height 2.4rem
 
     .master-day-time
         h4
@@ -719,6 +782,11 @@ a
                     color #128127
 
     .master-info
+        &.fs-18
+            font-size 1.8rem
+            line-height 2.8rem
+        &.fw-600
+            font-weight 600
         .name
             &.color2
                 color #128127
@@ -833,6 +901,8 @@ a
             padding-bottom 8px
         &.pt-8
             padding-top 8px
+        &.pt-0
+            padding-top 0px
         .btn
             font-size 1.6rem
             line-height 2.4rem
@@ -862,6 +932,10 @@ a
         background #E8F4EA
         border none
         padding 8px 16px
+        &.no-bg
+            background none
+        &.padd2
+            padding 8px 0 12px
         .b-app-item_foot-list
             li
                 font-size 1.4rem
@@ -1017,9 +1091,26 @@ a
     .ch-time-edit-wrap
         &.var2-color
             color #172419
+        &.height-58.full
+            width 134px
+            .ch-time-edit-input
+                height 58px
+                font-size 1.6rem
+                line-height 24px
+            .ch-time-edit-minus
+            .ch-time-edit-plus
+                width 58px
+                height 58px
+                font-size 2.4rem
+                color #128127
+            .ph-trash
+            .ph-plus
+                &:before
+                    font-weight 400
     .ch-time-edit-input
         border none
         background rgba(0, 0, 0, 0.04)
+        font 1.4rem/2rem $inter
     .na-sr__item
         &.chosen
             .na-sr__item-dop
@@ -1032,6 +1123,8 @@ a
                 color #128127
         &.fw-wrap
             flex-wrap wrap
+        &.ai-center
+            align-items center
     .na-sr__item-title
         &.mb-0
             margin-bottom 0
@@ -1173,6 +1266,8 @@ a
         padding-bottom 0
     &.mb-16
         margin-bottom 16px
+    &.mt-16
+        margin-top 16px
     &.with-float-label
         position relative
         input.text
@@ -1896,6 +1991,10 @@ button.btn
     position absolute
     top -12px
     left 0
+    &.no-abs
+        position relative
+        top -8px
+        margin 0 0 -4px
 .head-tabs
     background #D0E9D5
     border-radius 16px
