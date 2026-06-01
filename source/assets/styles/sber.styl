@@ -7,7 +7,7 @@ a
     color #128127
 
 .redesign-version
-    padding-bottom 0
+    padding-bottom 74px
     &.home-type
         .h-header
             &.popup-header
@@ -50,43 +50,7 @@ a
                         font-size 1.4rem
                         line-height 2rem
                         color #172419
-    &:not(.var2-content-bg.h-100):not(.popup-inner)
-        height 100vh
-        display grid
-        grid-template-rows auto minmax(0, 1fr)
-        padding 0
-        .h-content-wrap
-        .h-wrap
-        .new-app-form-wrap
-            min-height 100%
-            display grid
-            box-sizing border-box
-        .new-app-form-item
-            min-height 0
-            display grid
-            grid-template-rows minmax(0, 1fr) auto
-        .new-app-form-main
-            min-height 0
-            overflow auto
-            position relative
-            left -16px
-            margin-right -32px
-            padding 16px
-            align-self stretch
-            align-content start
-            justify-content stretch
-            &.pt-0
-                padding-top 0
-            &.pb-0
-                padding-bottom 0
-        .new-app-form-footer
-            width auto
-            position relative
-            left -16px
-            margin-right -32px
-            bottom auto
-            padding-left 16px
-            padding-right 16px
+    
 
     .h-header
         box-shadow none
@@ -1571,7 +1535,7 @@ button.btn
     margin 0 0 8px
 
 .h-footer
-    position static
+    //position static
     border-top none
     height 74px
     & + .global-chat-buble
@@ -2772,3 +2736,46 @@ button.btn
     background: #148F2B;
     color: #fff;
 }
+
+.new-app-form-main
+    position relative
+    left -16px
+    margin-right -32px
+    padding 16px
+    &.pt-0
+        padding-top 0
+    &.pb-0
+        padding-bottom 0
+
+.h-site-inner-holder
+    margin-bottom -74px
+    height 100vh
+    display grid
+    grid-template-rows auto minmax(0, 1fr)
+    padding 0
+    .h-content-wrap
+    .h-wrap
+    .new-app-form-wrap
+        min-height 100%
+        display grid
+        box-sizing border-box
+    .new-app-form-item
+        min-height 0
+        display grid
+        grid-template-rows minmax(0, 1fr) auto
+    .new-app-form-main
+        min-height 0
+        overflow auto
+        align-self stretch
+        align-content start
+        justify-content stretch
+    .new-app-form-footer
+        width auto
+        position relative
+        left -16px
+        margin-right -32px
+        bottom auto
+        padding-left 16px
+        padding-right 16px
+    .h-footer
+        position static
