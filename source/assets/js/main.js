@@ -58,14 +58,4 @@ $(function() {
         });
     };
 
-    const swiper = new Swiper('.sett__pictures-slider', {
-        slidesPerView: 1,
-        spaceBetween: 16,
-
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
-    });
-
 });
