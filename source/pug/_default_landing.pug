@@ -1,0 +1,108 @@
+doctype html
+
+include _mixins.pug
+
+html.no-js
+    head
+        meta(content="text/html; charset=utf-8", http-equiv="Content-Type")
+        meta(name="viewport", content="width=device-width, initial-scale=1, maximum-scale=2, user-scalable=1")
+        meta(content="", name="Description")
+        meta(content="", name="Keywords")
+        meta(content="index,follow", name="robots")
+        meta(content="yes", name="apple-mobile-web-app-capable")
+        title Проект для самозанятых
+        block styles
+            link(href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&amp;display=swap", rel="stylesheet", type="text/css")
+            link(href="../f/css/home.css", rel="stylesheet", type="text/css")
+
+    body
+        header.h-header.header-sticky
+            .h-topnav-wrap
+                .h-fixed
+                    .topnav-center
+                        a.logo(href="/") Сонлайн Салоны Онлайн
+                        block topNav
+                            nav.topnav
+                                input#topnav-toggle.phone-show(type="checkbox")
+                                label.topnav-button-container.phone-show(for="topnav-toggle")
+                                    .topnav-button
+                                .topnav-list
+                                    .topnav-login
+                                        +btn("Войти").with-border.smaller-height
+                                        +btn("Регистрация").with-border.smaller-height
+                                    .topnav-logged
+                                        span.topnav-logged__username
+                                            a(href="") UserName
+                                        a.topnav-logged__sign-out(href="")
+                                            i.ph.ph-sign-out
+                                    span.topnav-phone 8 (800) 302-32-09
+        
+        section.h-content-wrap
+            block content
+
+        footer.h-footer
+            .h-fixed
+                a.logo(href="/") Sonline
+                .footer-cols__wrap
+                    .footer-cols__col.col1
+                        h3 Контакты
+                        ul.footer-contacts
+                            li
+                                h4 Россия, Москва
+                                .address Садовая-Каретная ул., д. 22, стр. 1
+                                .phone 8 (800) 302-32-09
+                                .mail
+                                    a(href="mailto:info@sonline.su") info@sonline.su
+                            li
+                                h4 Россия, Санкт-Петербург
+                                .address Антоненко пер., д. 3
+                                .phone 8 (800) 302-32-09
+                                .mail
+                                    a(href="mailto:info@sonline.su") info@sonline.su
+                            li
+                                h4 Армения, Ереван
+                                .address ул. Е. Тадевосяна, д. 3/1
+                                .phone +374 (44) 31 33 22
+                                .mail
+                                    a(href="mailto:info@sonline.su") info@sonline.su
+                    .footer-cols__col.col2
+                        h3 Информация
+                        ul.footer-nav
+                            li
+                                a(href="") Политика конфиденциальности
+                            li
+                                a(href="") Пользовательское соглашение
+                            li
+                                a(href="") Уведомление об использовании файлов cookie
+                            li
+                                a(href="") Оферта
+                            li
+                                a(href="") Оферта по SMS
+                            li
+                                a(href="") Условия возврата
+                            li
+                                a(href="") Процесс оплаты 
+                                    br.tablet-show
+                                    |  с помощью банковской карты
+                            li
+                                a(href="") Реквизиты
+                            li
+                                a(href="") L'Oreal
+                            li
+                                a(href="") Партнеры
+                    .footer-cols__col.col3
+                        h3 Наши каналы
+                        ul.footer-social
+                            li
+                                a.max(href="") Max
+                            li
+                                a.telegram(href="") Telegram
+                        ul.footer-stores
+                            li
+                                a.google-play(href="") Доступно в Google Play
+                            li
+                                a.app-store(href="") Загрузите в App Store
+
+        block popup
+
+        block scripts

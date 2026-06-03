@@ -1,0 +1,376 @@
+extends _default_landing
+
+block content 
+        
+    .b-section-wrap
+        .h-fixed
+            .section-title
+                h2.section-h2 Все основные функции сервиса для самозанятых всегда доступны бесплатно
+
+            .tabs-switcher-wrap
+                input.tabs-switcher-input(type="radio" name="tabs-switcher-tab" id="tabs-switcher-tab1" checked)
+                input.tabs-switcher-input(type="radio" name="tabs-switcher-tab" id="tabs-switcher-tab2")
+                .tabs-switcher-buttons
+                    .tabs-switcher-buttons-inner
+                        label.tabs-switcher-label(for="tabs-switcher-tab1") Месяц
+                        label.tabs-switcher-label(for="tabs-switcher-tab2")
+                            | Год
+                            span.badge.phone-hide Экономия 50%
+                            span.badge.phone-show −50%
+
+                .tabs-switcher-content.tabs-switcher-content1
+                    .tariffs__wrap.half
+                        .tariffs__card.bg-2
+                            h3.tariffs__card-title Тариф «Лайт»
+                            .tariffs__card-subtitle Все базовые функции сервиса
+                            .tariffs__card-price
+                                strong Бесплатно
+                                |  в месяц
+                            .tariffs__card-hr
+                            .tariffs__card-copy
+                                h4 В тариф включено:
+                                ul
+                                    li Расписание
+                                    li График работы
+                                    li Записи
+                                    li Клиенты
+                                    li Финансы
+                                    li Онлайн-запись
+                                    li История операций за 3 месяца
+                            +btn("Подключить бесплатно")
+
+                        .tariffs__card.bg-2
+                            h3.tariffs__card-title Тариф «Бизнес»
+                            .tariffs__card-subtitle Расширьте свои возможности
+                            .tariffs__card-price
+                                strong 150 ₽
+                                |  в месяц
+                            .tariffs__card-hr
+                            .tariffs__card-copy
+                                h4 В тариф включено:
+                                ul
+                                    li Все функции тарифа «Лайт»
+                                    li Шаблоны сообщений
+                                    li Кастомизация виджета онлайн-записи
+                                    li Кастомизация статусов
+                                    li Эквайринг
+                                    li История операций за 12 месяцев
+                            +btn("Подключить за 150 ₽")
+                        
+                .tabs-switcher-content.tabs-switcher-content2
+                    .tariffs__wrap.half
+                        .tariffs__card.bg-2
+                            h3.tariffs__card-title Тариф «Лайт»
+                            .tariffs__card-subtitle Все базовые функции сервиса
+                            .tariffs__card-price
+                                strong Бесплатно
+                                |  в год
+                            .tariffs__card-hr
+                            .tariffs__card-copy
+                                h4 В тариф включено:
+                                ul
+                                    li Расписание
+                                    li График работы
+                                    li Записи
+                                    li Клиенты
+                                    li Финансы
+                                    li Онлайн-запись
+                                    li История операций за 3 месяца
+                            +btn("Подключить бесплатно")
+
+                        .tariffs__card.bg-2
+                            h3.tariffs__card-title Тариф «Бизнес»
+                            .tariffs__card-subtitle Расширьте свои возможности
+                            .tariffs__card-price
+                                strong 900 ₽
+                                |  в год
+                            .tariffs__card-hr
+                            .tariffs__card-copy
+                                h4 В тариф включено:
+                                ul
+                                    li Все функции тарифа «Лайт»
+                                    li Шаблоны сообщений
+                                    li Кастомизация виджета онлайн-записи
+                                    li Кастомизация статусов
+                                    li Эквайринг
+                                    li История операций за 12 месяцев
+                            +btn("Подключить за 900 ₽")
+
+    .b-section-wrap
+        .h-fixed
+            .section-title
+                h2.section-h2 Сравнение тарифов
+            .compare__wrap
+                .compare__like-table
+                    .compare__like-row.thead
+                        .compare__like-col.title
+                        .compare__like-col
+                            .compare__like-col-inner
+                                h4 Тариф «Лайт»
+                        .compare__like-col
+                            .compare__like-col-inner
+                                h4 Тариф «Бизнес»
+                    .compare__like-row
+                        .compare__like-col.title
+                            .compare__like-col-inner
+                                h4 Виджет онлайн записи
+                        .compare__like-col
+                            .compare__like-col-inner
+                                span.icon.plus +
+                        .compare__like-col
+                            .compare__like-col-inner
+                                span.icon.plus +
+                    .compare__like-row
+                        .compare__like-col.title
+                            .compare__like-col-inner
+                                h5 Фотографии
+                        .compare__like-col
+                            .compare__like-col-inner Фото специалиста
+                        .compare__like-col
+                            .compare__like-col-inner
+                                | Фото специалиста
+                                br
+                                | 5 фото в описании профиля
+                                br
+                                | 10 фото услуг
+                    .compare__like-row
+                        .compare__like-col.title
+                            .compare__like-col-inner
+                                h5 Собственные цвета
+                        .compare__like-col
+                            .compare__like-col-inner
+                                span.icon.minus -
+                        .compare__like-col
+                            .compare__like-col-inner
+                                span.icon.plus +
+                    .compare__like-row
+                        .compare__like-col.title
+                            .compare__like-col-inner
+                                h5 Описание деятельности
+                        .compare__like-col
+                            .compare__like-col-inner До 140 символов
+                        .compare__like-col
+                            .compare__like-col-inner До 500 символов
+                    .compare__like-row
+                        .compare__like-col.title
+                            .compare__like-col-inner
+                                h5 Отзывы клиентов
+                        .compare__like-col
+                            .compare__like-col-inner
+                                span.icon.minus -
+                        .compare__like-col
+                            .compare__like-col-inner
+                                span.icon.plus +
+                    .compare__like-row
+                        .compare__like-col.title
+                            .compare__like-col-inner
+                                h4 Календарь записей
+                        .compare__like-col
+                            .compare__like-col-inner
+                                span.icon.plus +
+                        .compare__like-col
+                            .compare__like-col-inner
+                                span.icon.plus +
+                    .compare__like-row
+                        .compare__like-col.title
+                            .compare__like-col-inner
+                                h5 Собственные цвета и символы
+                        .compare__like-col
+                            .compare__like-col-inner
+                                span.icon.minus -
+                        .compare__like-col
+                            .compare__like-col-inner
+                                span.icon.plus +
+                    .compare__like-row
+                        .compare__like-col.title
+                            .compare__like-col-inner
+                                h5 Личные напоминания
+                        .compare__like-col
+                            .compare__like-col-inner
+                                span.icon.minus -
+                        .compare__like-col
+                            .compare__like-col-inner
+                                span.icon.plus +
+                    .compare__like-row
+                        .compare__like-col.title
+                            .compare__like-col-inner
+                                h4 История записей
+                        .compare__like-col
+                            .compare__like-col-inner
+                                span.icon.plus +
+                        .compare__like-col
+                            .compare__like-col-inner
+                                span.icon.plus +
+                    .compare__like-row
+                        .compare__like-col.title
+                            .compare__like-col-inner
+                                h5 Хранение записей
+                        .compare__like-col
+                            .compare__like-col-inner 3 месяца
+                        .compare__like-col
+                            .compare__like-col-inner 12 месяцев
+                    .compare__like-row
+                        .compare__like-col.title
+                            .compare__like-col-inner
+                                h4 Клиенты
+                        .compare__like-col
+                            .compare__like-col-inner
+                                span.icon.plus +
+                        .compare__like-col
+                            .compare__like-col-inner
+                                span.icon.plus +
+                    .compare__like-row
+                        .compare__like-col.title
+                            .compare__like-col-inner
+                                h5 Карточка клиента
+                        .compare__like-col
+                            .compare__like-col-inner Имя, телефон, комментарий до&nbsp;140&nbsp;символов
+                        .compare__like-col
+                            .compare__like-col-inner Имя, телефон, комментарий до&nbsp;500&nbsp;симврорв, история визитов
+                    .compare__like-row
+                        .compare__like-col.title
+                            .compare__like-col-inner
+                                h5 Создание и работа с группами
+                        .compare__like-col
+                            .compare__like-col-inner
+                                span.icon.minus -
+                        .compare__like-col
+                            .compare__like-col-inner
+                                span.icon.plus +
+                    .compare__like-row
+                        .compare__like-col.title
+                            .compare__like-col-inner
+                                h4 Финансовые результаты
+                        .compare__like-col
+                            .compare__like-col-inner
+                                span.icon.plus +
+                        .compare__like-col
+                            .compare__like-col-inner
+                                span.icon.plus +
+                    .compare__like-row
+                        .compare__like-col.title
+                            .compare__like-col-inner
+                                h4 Интеграция с мессенджерами
+                        .compare__like-col
+                            .compare__like-col-inner
+                                span.icon.plus +
+                        .compare__like-col
+                            .compare__like-col-inner
+                                span.icon.plus +
+                    .compare__like-row
+                        .compare__like-col.title
+                            .compare__like-col-inner
+                                h5 Собственные шаблоны сообщений
+                        .compare__like-col
+                            .compare__like-col-inner
+                                span.icon.minus -
+                        .compare__like-col
+                            .compare__like-col-inner
+                                span.icon.plus +
+                    .compare__like-row
+                        .compare__like-col.title
+                            .compare__like-col-inner
+                                h5 Количество символов в рассылках
+                        .compare__like-col
+                            .compare__like-col-inner До 140 символов
+                        .compare__like-col
+                            .compare__like-col-inner До 500 символов
+
+    .b-section-wrap.bg-2
+        .h-fixed
+            .section-title
+                h2.section-h2 Подключайте уведомления для вас и&nbsp;ваших клиентов
+                .section-copy 🔥 Получите скидку 20% при подключении двух каналов уведомлений и 30% при подключении трех 🔥
+            .tariffs__wrap
+                .tariffs__card
+                    h3.tariffs__card-title
+                        | Max уведомления
+                        br
+                        | + бот
+                    .tariffs__card-price
+                        strong 690 ₽
+                        |  в месяц
+                    .tariffs__card-hr
+                    .tariffs__card-copy
+                        ul
+                            li Сообщения получаете вы и клиенты
+                            li Уведомления о создании, отмене, переносе записи; напоминания о записи; приглашение оставить отзыв
+                            li Max
+                    +btn("Подключить за 690 ₽").with-border
+
+                .tariffs__card
+                    h3.tariffs__card-title
+                        | Telegram уведомления
+                        br
+                        | + бот
+                    .tariffs__card-price
+                        strong 690 ₽
+                        |  в месяц
+                    .tariffs__card-hr
+                    .tariffs__card-copy
+                        ul
+                            li Сообщения получаете вы и клиенты
+                            li Уведомления о создании, отмене, переносе записи; напоминания о записи; приглашение оставить отзыв
+                            li Telegram
+                    +btn("Подключить за 690 ₽").with-border
+
+                .tariffs__card
+                    h3.tariffs__card-title
+                        | WhatsApp уведомления
+                        br
+                        | + бот
+                    .tariffs__card-price
+                        strong 690 ₽
+                        |  в месяц
+                    .tariffs__card-hr
+                    .tariffs__card-copy
+                        ul
+                            li Сообщения получаете вы и клиенты
+                            li Уведомления о создании, отмене, переносе записи; напоминания о записи; приглашение оставить отзыв
+                            li WhatsApp
+                    +btn("Подключить за 690 ₽").with-border
+
+                .tariffs__card
+                    h3.tariffs__card-title
+                        | Max уведомления
+                        br
+                        | + рассылка
+                    .tariffs__card-price
+                        strong 1180 ₽
+                        |  в месяц
+                    .tariffs__card-hr
+                    .tariffs__card-copy
+                        ul
+                            li Сообщения получаете вы и клиенты
+                            li Уведомления о создании, отмене, переносе записи; напоминания о записи; приглашение оставить отзыв
+                            li Max
+                    +btn("Подключить за 1180 ₽").with-border
+
+                .tariffs__card
+                    h3.tariffs__card-title
+                        | Telegram уведомления
+                        br
+                        | + рассылка
+                    .tariffs__card-price
+                        strong 1180 ₽
+                        |  в месяц
+                    .tariffs__card-hr
+                    .tariffs__card-copy
+                        ul
+                            li Сообщения получаете вы и клиенты
+                            li Уведомления о создании, отмене, переносе записи; напоминания о записи; приглашение оставить отзыв
+                            li Telegram
+                    +btn("Подключить за 1180 ₽").with-border
+
+                .tariffs__card
+                    h3.tariffs__card-title Уведомления только для вас
+                    .tariffs__card-price
+                        strong 100 ₽
+                        |  в месяц
+                    .tariffs__card-hr
+                    .tariffs__card-copy
+                        ul
+                            li Сообщения получаете только вы
+                            li Уведомления о создании новых записей
+                            li Max, Telegram, WhatsApp
+                    +btn("Подключить за 100 ₽").with-border
