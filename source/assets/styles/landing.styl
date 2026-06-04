@@ -227,6 +227,155 @@ button.btn
     font-weight 600
     margin 8px 0 0
 
+.b-banner-wrap
+    padding 24px
+    @media $phone
+        padding 16px
+.banner
+    &-wrap
+        box-sizing border-box
+        height 592px
+        padding 0 24px
+        background url(../../f/i/banner-bg.jpg) 50% 50% no-repeat
+        background-size cover
+        border-radius 16px
+        display flex
+        align-items center
+        justify-content center
+        gap 0 24px
+        @media $tablet
+            padding-top 32px
+            padding-bottom 32px
+            height 546px
+            flex-wrap wrap
+            flex-direction column
+        @media $phone
+            height auto
+            display block
+            padding-left 16px
+            padding-right 16px
+    &-col1
+        width 787px
+        @media $tablet
+            width 100%
+    &-col2
+        width 360px
+        @media $tablet
+            width 100%
+    &-badge
+        display inline-block
+        border-radius 999px
+        background rgba(0, 0, 0, 0.40)
+        font-size 2.4rem
+        line-height 3.6rem
+        font-weight 600
+        letter-spacing -0.48px
+        color #fff
+        margin 0 0 24px
+        padding 4px 24px
+        @media $phone
+            font-size 1.4rem
+            line-height 2rem
+            letter-spacing -0.28px
+            padding-left 16px
+            padding-right 16px
+    &-title
+        font-size s('min(4.444vw, 64px)')
+        line-height s('min(5vw, 72px)')
+        font-weight 600
+        letter-spacing -2.56px
+        margin 0 0 12px
+        @media $tablet
+            font-size 4.8rem
+            line-height 5.6rem
+        @media $phone
+            font-size 4rem
+            line-height 4.8rem
+            letter-spacing -1.6px
+    &-copy
+        font-size 2rem
+        line-height 3.2rem
+        font-weight 600
+        letter-spacing -0.4px
+        @media $tablet
+            font-size 1.8rem
+            line-height 2.8rem
+            letter-spacing -0.36px
+        @media $phone
+            font-size 1.6rem
+            line-height 2.4rem
+            letter-spacing normal
+    &-discount
+        font-style italic
+        font-weight 900
+        color #fff
+    &-discount-number
+        display block
+        font-size s('min(13.333vw, 192px)')
+        line-height normal
+        letter-spacing -15.36px
+        text-shadow 0 4px 12px rgba(0, 72, 62, 0.3), 0 12px 48px rgba(0, 72, 62, 0.48)
+        @media $tablet
+            font-size 16rem
+            letter-spacing -12.8px
+        .percent
+            display inline-block
+            font-size s('min(7.639vw, 110px)')
+            transform translateY(-70px)
+            margin-left 15px
+            @media $tablet
+                font-size 10rem
+                transform translateY(-55px)
+                margin-left 7px
+    &-discount-copy
+        display block
+        font-size 2rem
+        line-height 3.2rem
+        margin-top -24px
+        text-transform uppercase
+        text-shadow 0 2px 8px rgba(0, 72, 62, 0.25), 0 6px 24px rgba(0, 72, 62, 0.3)
+        @media $tablet
+            font-size 1.6rem
+            line-height 2.4rem
+
+.b-terms-wrap
+    padding 24px 0
+    @media $phone
+        padding 12px 0
+.terms
+    &-wrap
+        box-sizing border-box
+        max-width 800px
+        margin 0 auto
+        background #FDFAE6
+        border-radius 24px
+        padding 24px
+    &-title
+        font-size 2.4rem
+        line-height 3.6rem
+        font-weight 600
+        letter-spacing -0.96px
+        margin 0 0 4px
+    &-subtitle
+        font-size 1.8rem
+        line-height 2.8rem
+        font-weight 600
+        margin 0 0 24px
+    &-list
+        font-size 1.6rem
+        line-height 2.4rem
+        li
+            position relative
+            margin 0 0 2px
+            padding 0 0 0 20px
+            .numb
+                position absolute
+                top 0
+                left 0
+        b
+            font-weight 500
+
+
 .tabs-switcher
     &-input
         display none
@@ -261,7 +410,7 @@ button.btn
             padding 9px 10px
         .badge
             border-radius 999px
-            background #148F2B
+            background #FF3B38
             font-size 1.2rem
             line-height 1.6rem
             font-weight 500
@@ -315,13 +464,36 @@ button.btn
         display flex
         flex-direction column
         background #fff
+        position relative
         @media $tablet
             width calc(50% - 12px)
         @media $phone
             width 100%
-            margin 0 0 12px
+            margin 0 0 24px
         &.bg-2
             background #E8F4EA
+        &.with-border
+            border 2px solid rgba(0, 0, 0, 0.12)
+            &.bg-2
+                border-color rgba(18, 129, 39, 0.40)
+    &__card-discount
+        box-sizing border-box
+        position absolute
+        top 0
+        left 50%
+        transform translate(-50%, -50%)
+        border-radius 999px
+        background #72BC80
+        padding 4px
+        width 362px
+        font-size 1.6rem
+        line-height 2.4rem
+        color #fff
+        text-align center
+        @media $tablet
+            width calc(100% - 66px)
+        @media $phone
+            width calc(100% - 46px)
     &__card-title
         font-size 2.4rem
         line-height 3.6rem
@@ -334,8 +506,16 @@ button.btn
         line-height 3.2rem
         letter-spacing 0.4px
         margin 24px 0 0
-        strong
+        del
             display block
+            font-size 2.4rem
+            line-height 3.6rem
+            color rgba(23, 36, 25, 0.48)
+            letter-spacing -0.96px
+        strong
+            display flex
+            gap 8px
+            align-items baseline
             font-size 3.2rem
             line-height 4rem
             font-weight 500
@@ -344,6 +524,36 @@ button.btn
                 display block
             @media $phone
                 display inline
+            .slash
+                font-size 2rem
+                line-height 3.2rem
+                font-weight 600
+                color rgba(23, 36, 25, 0.48)
+                letter-spacing normal
+            .duration
+                font-size 2rem
+                line-height 3.2rem
+                font-weight 600
+                letter-spacing normal
+    &__card-profit
+        display flex
+        align-items center
+        flex-wrap wrap
+        gap 8px
+        margin 8px -10px 0 0
+        font-size 1.6rem
+        line-height 2.4rem
+        font-weight 600
+        letter-spacing -0.28px
+        .discount
+            border-radius 999px
+            background #FF3B38
+            font-size 1.4rem
+            line-height 2rem
+            font-weight 500
+            color #fff
+            letter-spacing -0.28px
+            padding 2px 10px
     &__card-hr
         height 1px
         background rgba(0, 0, 0, 0.12)

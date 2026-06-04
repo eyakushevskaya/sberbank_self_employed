@@ -1,6 +1,41 @@
 extends _default_landing
 
-block content 
+block content
+
+    .b-banner-wrap
+        .banner-wrap
+            .banner-col1
+                .banner-badge Эксклюзивно для клиентов Сбера
+                h2.banner-title Сервис для самозанятых бесплатно и со скидкой
+                .banner-copy Специальное предложение для клиентов Сбера, подключивших тариф в приложении Сбербанк Онлайн через раздел для самозанятых
+            .banner-col2
+                .banner-discount
+                    span.banner-discount-number
+                        | 50
+                        span.percent %
+                    span.banner-discount-copy
+                        | Для клиентов сбера 
+                        br
+                        | Скидка на тариф «Бизнес»
+
+    .b-terms-wrap
+        .h-fixed
+            .terms-wrap
+                h2.terms-title Условия акции
+                h3.terms-subtitle Акция доступна при выполнении всех условий
+                ul.terms-list
+                    li
+                        span.numb 1.
+                        | Вы являетесь клиентом Сбера и зарегистрированы как самозанятый.
+                    li
+                        span.numb 2.
+                        | Тариф подключён через приложение Сбербанк Онлайн (раздел для самозанятых).
+                    li
+                        span.numb 3.
+                        |  Вход в Sonline выполнен по специальной ссылке: 
+                        b
+                            a(href="") sber.sonline.su/login
+                        |  (переход по кнопке «Календарь записи» в приложении Сбербанк Онлайн).
         
     .b-section-wrap
         .h-fixed
@@ -20,7 +55,7 @@ block content
 
                 .tabs-switcher-content.tabs-switcher-content1
                     .tariffs__wrap.half
-                        .tariffs__card.bg-2
+                        .tariffs__card.with-border
                             h3.tariffs__card-title Тариф «Лайт»
                             .tariffs__card-subtitle Все базовые функции сервиса
                             .tariffs__card-price
@@ -37,14 +72,20 @@ block content
                                     li Финансы
                                     li Онлайн-запись
                                     li История операций за 3 месяца
-                            +btn("Подключить бесплатно")
+                            +btn("Подключить бесплатно").with-border
 
-                        .tariffs__card.bg-2
+                        .tariffs__card.with-border.bg-2
+                            span.tariffs__card-discount Акция Сбер для самозанятых
                             h3.tariffs__card-title Тариф «Бизнес»
                             .tariffs__card-subtitle Расширьте свои возможности
                             .tariffs__card-price
+                                del 300 ₽
                                 strong 150 ₽
-                                |  в месяц
+                                    span.slash /
+                                    span.duration в месяц
+                            .tariffs__card-profit
+                                | Экономия 150 ₽ в месяц
+                                span.discount Скидка 50%
                             .tariffs__card-hr
                             .tariffs__card-copy
                                 h4 В тариф включено:
