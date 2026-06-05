@@ -100,7 +100,7 @@ block content
                         
                 .tabs-switcher-content.tabs-switcher-content2
                     .tariffs__wrap.half
-                        .tariffs__card.bg-2
+                        .tariffs__card.with-border
                             h3.tariffs__card-title Тариф «Лайт»
                             .tariffs__card-subtitle Все базовые функции сервиса
                             .tariffs__card-price
@@ -117,14 +117,20 @@ block content
                                     li Финансы
                                     li Онлайн-запись
                                     li История операций за 3 месяца
-                            +btn("Подключить бесплатно")
+                            +btn("Подключить бесплатно").with-border
 
-                        .tariffs__card.bg-2
+                        .tariffs__card.with-border.bg-2
+                            span.tariffs__card-discount Акция Сбер для самозанятых
                             h3.tariffs__card-title Тариф «Бизнес»
                             .tariffs__card-subtitle Расширьте свои возможности
                             .tariffs__card-price
+                                del 1800 ₽
                                 strong 900 ₽
-                                |  в год
+                                    span.slash /
+                                    span.duration в год
+                            .tariffs__card-profit
+                                | Экономия 900 ₽ в год
+                                span.discount Скидка 50%
                             .tariffs__card-hr
                             .tariffs__card-copy
                                 h4 В тариф включено:
