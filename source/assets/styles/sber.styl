@@ -2756,10 +2756,10 @@ button.btn
         position relative
     &-messages-container
         max-height 100%
+        flex-grow 1
     &-message-wrap
         position relative
         padding 0 0 8px
-        text-align right
         &.other
             .chat-message
                 background #fff
@@ -2772,6 +2772,7 @@ button.btn
             &:has(+ .chat-message-wrap.other)
                 padding-bottom 0
         &.me
+            text-align right
             .chat-message
                 background #D0E9D5
                 margin-right 8px
