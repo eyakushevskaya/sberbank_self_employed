@@ -201,6 +201,12 @@ a
                 color #172419
             &:focus + .float-label
                 color #128127
+        .chat-submit
+            textarea
+                padding 12px 36px 12px 12px
+                overflow-y hidden
+                height 48px
+                line-height 24px
         .masters-days-times-wrap
             &.nobord
                 border-bottom 0
@@ -1232,6 +1238,8 @@ a
         margin-bottom 16px
     &.mt-16
         margin-top 16px
+    &.mb-0
+        margin-bottom 0
     &.with-float-label
         position relative
         input.text
@@ -1367,6 +1375,15 @@ a
             &:not(:placeholder-shown)
                 & + .float-label + .color-picker-badge
                     display block
+    &.with-x
+        textarea
+            &:focus
+                & + input.reset
+                    background url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAQAAADZc7J/AAAAkElEQVR42u2USwrAIAxEPWpuoheQObKlSC225tsunXXeI+iQlHb+TaVKH2YqoaEhSzjyOcMo0AWCouNo4HZAkRQDL9KKrMKE8wozvla48LfCjc+KED4pYvhDUULFHssr7dTxiOJ+OrmdKq4X3NR5l2L972YFXxuTQm6dqqik1eZSyBepGNrJXiSCelQtMzvOHJuWALADA3RDAAAAAElFTkSuQmCC") 0 0 no-repeat
+                    background-size 16px 16px
+                    top 50%
+                    right 12px
+                    transform translateY(-50%)
 
 .custom-form__field-headline
     font-size 1.8rem
@@ -1547,15 +1564,28 @@ button.btn
 .foot-nav
     padding 0 0 8px
     li
+        width 25%
         height 66px
-        font-size 1.1rem
+        font-size 1.2rem
         line-height 1.6rem
-        letter-spacing -0.22px
+        letter-spacing -0.24px
         &.other
             svg
                 top 10px
         &.add
             background #148F2B
+            width 25%
+            margin 2px 0 0 auto
+        &.chat
+            background #148F2B
+            width 25%
+            height 64px
+            border-radius 32px 0 0 32px
+            margin 2px 0 0 auto
+            flex-grow 0
+            a
+                color #fff
+                padding-top 42px
         &.active
             a
                 color #128127
@@ -1570,6 +1600,28 @@ button.btn
         path
             fill #172419
             fill-opacity 0.72
+    .chat-icon
+        position absolute
+        top 8px
+        left 50%
+        transform translateX(-50%)
+        .ph
+            font-size 3.3rem
+    .chat-icon-badge
+        box-sizing border-box
+        position absolute
+        top -4px
+        right -4px
+        padding 0 4px
+        min-width 16px
+        height 16px
+        background #FF3B38
+        border-radius 999px
+        font-size 1.1rem
+        line-height 1.6rem
+        font-weight 500
+        letter-spacing -0.22px
+        color #fff
 
 .h-content-round-wrap
     display flex
@@ -2694,6 +2746,131 @@ button.btn
     &:after
         border-radius 24px 24px 0 0
         bottom -8px
+
+
+.chat
+    &-body
+        height 100%
+        display flex
+        align-items flex-end
+        position relative
+    &-messages-container
+        max-height 100%
+    &-message-wrap
+        position relative
+        padding 0 0 8px
+        text-align right
+        &.other
+            .chat-message
+                background #fff
+                margin-right 32px
+                margin-left 8px
+                border-top-left-radius 0
+                &:before
+                    background-image url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAUCAQAAAAua3X8AAAAZElEQVR42oXPQRHCQBQE0ZYQCUiIhJWABCQgYaXEyUqIBCREQudGFWzyZ/r6LoPYHB7eDJvlcE/ABI4E3glgT6AkJMK3VwL4vHrET+tM+OvhpwYTIRFuyF4DXBw1QNwSwJ4A9hNJKwQd4HipzgAAAABJRU5ErkJggg==")
+                    left -8px
+            &:has(+ .chat-message-wrap.other)
+                padding-bottom 0
+        &.me
+            .chat-message
+                background #D0E9D5
+                margin-right 8px
+                margin-left 32px
+                border-top-right-radius 0
+                &:before
+                    background-image url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAUCAYAAACEYr13AAAAj0lEQVR4AaWTsQ3CMBREbwRGYARGyCiMwgiMwCaM8BGOQ+nS2BSMADLFNWAR33/Sle8pUr5xKfE1vLqcLd+2aAgBzh5hYkD9EgbUOQNLcgWshANccsMlN3RZCFi+7kFGAjU+LYcJv1gl17hDj3//mTffQ5WJLvcDZiltsJavd055MGBlPkHhI9/nI1R4miJv1G7gHdk1UycAAAAASUVORK5CYII=")
+                    right -8px
+            &:has(+ .chat-message-wrap.me)
+                padding-bottom 0
+        &:last-child
+            padding-bottom 16px
+    &-message
+        display inline-block
+        text-align left
+        margin 0 0 4px
+        padding 12px 16px
+        border-radius 16px
+        font-size 1.6rem
+        line-height 2.4rem
+        color #172419
+        position relative
+        &:before
+            content ""
+            display block
+            width 8px
+            height 10px
+            position absolute
+            top 0
+            background-position 0 0
+            background-repeat no-repeat
+            background-size 8px 10px
+        &-meta
+            display flex
+            align-items center
+            justify-content flex-end
+            gap 4px
+            margin 4px 0 0
+            &-time
+                font-size 1.2rem
+                line-height 1.6rem
+                color rgba(23, 36, 25, 0.72)
+            &-status
+                display flex
+                align-items center
+                .ph
+                    font-size 1.6rem
+                    &.ph-check
+                        color rgba(23, 36, 25, 0.48)
+                    &.ph-checks-bold
+                        color #148F2B
+    &-date
+        font-size 1.4rem
+        line-height 2rem
+        font-weight 500
+        color rgba(23, 36, 25, 0.72)
+        text-align center
+        margin 0 0 8px
+        &.empty-chat
+            position absolute
+            top 0
+            left 50%
+            transform translateX(-50%)
+    &-submit
+        display flex
+        align-items center
+        gap 8px
+        position relative
+        left -8px
+        margin-right -16px
+        .custom-form__field
+            flex-grow 1
+        .chat-btn
+            margin 0 0 0 auto
+            padding 0
+            border none
+            outline 0
+            background #148F2B
+            border-radius 16px
+            width 48px
+            height 48px
+            font-size 3.2rem
+            text-align center
+            color #fff
+            display flex
+            align-items center
+            justify-content center
+            flex-shrink 0
+    &-download
+        width 32px
+        height 32px
+        padding 8px
+        font-size 3.2rem
+        text-align center
+        color rgba(23, 36, 25, 0.72)
+        display flex
+        align-items center
+        justify-content center
+        flex-shrink 0
 
 
 .h-calendar-inner .ui-widget.ui-widget-content {
