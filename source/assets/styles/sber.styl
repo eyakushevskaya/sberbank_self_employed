@@ -1503,6 +1503,34 @@ a
 button.btn
     font-family $inter
 
+.restrictions
+    &__wrap
+        border-radius 16px
+        background rgba(0, 0, 0, 0.04)
+        margin 0 0 32px
+        padding 16px 16px 12px
+        text-align center
+    &__icon
+        display flex
+        align-items center
+        justify-content center
+        width 48px
+        height 48px
+        text-align center
+        margin 0 auto
+        border-radius 999px
+        background rgba(0, 0, 0, 0.04)
+        font-size 3.2rem
+        color rgba(23, 36, 25, 0.72)
+    &__copy
+        padding 0 0 12px
+        font-size 1.6rem
+        line-height 2.4rem
+        color #172419
+    &__link
+        margin 0 0 8px
+        font-weight 500
+
 .popup-wrap
     &.modal-popup
         padding-top 64px
@@ -1550,6 +1578,43 @@ button.btn
     line-height 2.4rem
     text-align center
     margin 0 0 8px
+
+.popup-buble
+    box-sizing border-box
+    width 100%
+    padding 24px 16px
+    position fixed
+    top 0
+    left 0
+    z-index 300
+    &__inner
+        position relative
+        border-radius 16px
+        background rgba(0, 0, 0, 0.80)
+        padding 12px 52px 12px 16px
+        font-size 1.6rem
+        line-height 2.4rem
+        color #fff
+    &__closer
+        position absolute
+        top 12px
+        right 12px
+        width 24px
+        height 24px
+        background rgba(255, 255, 255, 0.48)
+        border-radius 999px
+        font-size 1.6rem
+        color #172419
+        display flex
+        align-items center
+        justify-content center
+    &__copy
+        margin 0 0 12px
+    &__link
+        margin 0 0 8px
+        font-weight 500
+        a
+            color #72BC80
 
 .h-footer
     //position static
