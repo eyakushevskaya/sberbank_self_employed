@@ -637,6 +637,10 @@ a
                 path
                     fill #148F2B
                     fill-opacity 1
+            .icon-default
+                display none
+            .icon-active
+                display block
         a
             display block
             padding 8px
@@ -645,6 +649,10 @@ a
             path
                 fill #172419
                 fill-opacity 0.72
+        .icon-default
+            display block
+        .icon-active
+            display none
 
     .schedule_master_tbl
         margin-top 8px
@@ -1674,7 +1682,7 @@ button.btn
             flex-grow 0
             a
                 color #fff
-                padding-top 42px
+                padding 42px 0 0
         &.active
             a
                 color #128127
@@ -1682,6 +1690,37 @@ button.btn
                 path
                     fill #148F2B
                     fill-opacity 1
+        &.schedule
+        &.work-schedule
+            &.active
+                a
+                    &:after
+                        display block
+                        content ""
+                        width 32px
+                        height 32px
+                        background-position 0 0
+                        background-repeat no-repeat
+                        background-size 32px 32px
+                        position absolute
+                        top 10px
+                        left 50%
+                        transform translateX(-50%)
+                svg
+                    opacity 0
+        &.schedule
+            &.active
+                a
+                    &:after
+                        background-image url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAAUVBMVEUAAAAgjzAgjyAQjzAUjysUjywUjysUjywVjysUjyoUjyoUjykVjiwYjygYjzAUjysTkSsTjysTjisVjysUjywUjywUjyoUjyoUkCwUkCwUjyv8GAyOAAAAGnRSTlMAEBAQcIDv799/gHBvICC/X2BfYK+/sK+vv0wGM3oAAAC2SURBVHhe7ZPJCsMwDETjNLHdJUvXRf//oa1PJshCGYoLLXqnkYgehjBNCeMU4gzsOZHIA3sOvZH2VQXjFGgt97FwHwjAc8OFICYmIAxfFCyS8kVNgSeKTJD3uuAcw5EJ8l4RKPy5AEEXmMAEfdt2ctYFXZp6MesCl6aNnOsLdmk6iFkX0N65rZStC7/cBQ7ehQzehRoCvAsZvAvf+40m8J8KrgRxY4IBekIYGm54rD9/Lu8N4wU5Er4wuMUeswAAAABJRU5ErkJggg==")
+        &.work-schedule
+            &.active
+                a
+                    &:after
+                        background-image url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAAgVBMVEUAAAAVjysUjywUjysYjygUjywVjysYjzAVjyoVjysVjysgjyAVjy0WjykTkSsUjysgjzAUjysVkCsTjisTjy0UjyoTjywUkCwUjywQjygVjysQjzAWjy0VjisTjysVjysUjywUjywUjyoVjysUjywUkCsVkCsUjysUkCwUkCwUjyv7wTj7AAAAKnRSTlMA3+/vIEBgIJAwzxBgUF9wEL+fX1CAkL+/II8QUKBgn4Cvr6DPv9/Pr88GwMBMAAABZElEQVR42u3X2W7CMBCF4eMtG92gUNZC9+W8/wMWSpsmMdZkVHHT8l2hwfpxhIUFTg65tuZCMY8Z0inmMW4J8+ME8qFlXw85IrmlgosL91QZoos67mCg9UpYccyAIw0i9VwOZMauEannQkDwxwMKp8D/DbwUZ/MBMCjHhSE5UQZGAQ3lXYAqMPWQMcleAr8JmBKfwqKypB0ugi5gPHYy0xhlioD12MqrTjXvHbjcX+zscKuegRG2zsnYRb+Ar29N8XZMb8Bw73Hgb/mj6hMoAWSN3SzZkMkB09wAu6uMHCgABKYCDGJgBeAmHSjEQAlglg5UYuAKgEsHnBhoz+NV2kDt+zyoH6G27PkIcwBPjVwt586zGDhrfY2bHF+uNtwpdAcpFlRHOWbQ4lKfkTEhQ8ss+Xv02msD8I6xVfIdWo8O/xatmQBIPcQ5FMYuaq+h4g1bKg8l+WKRhWJqSftehNM/444P8V0p3kvPbXQAAAAASUVORK5CYII=")
+        a
+            padding-left 2px
+            padding-right 2px
     a
         color #172419
     svg
@@ -2144,8 +2183,20 @@ button.btn
                 left 0
 
 .head-top
-    h1.fw-600
-        font-weight 600
+    h1
+        &.fw-600
+            font-weight 600
+        .beta-badge
+            display inline-block
+            font-size 1rem
+            line-height 1.4rem
+            font-weight 400
+            color #1A6BE6
+            background #D4ECF9
+            border-radius 999px
+            padding 1px 6px 2px 6px
+            position relative
+            top -8px
     .head-period
     .today
         font-size 1.4rem
@@ -2196,7 +2247,9 @@ button.btn
             a.head-top-icon-edit
                 margin-right 20px
                 color rgba(23, 36, 25, 0.72)
-                color 
+            a.head-top-icon-question
+                margin-left 20px
+                color rgba(23, 36, 25, 0.72)
     a.head-top-icon
         &.div-block
             color #128127
@@ -2208,7 +2261,7 @@ button.btn
     &.w-padding
         .head-top-icon
             font-size 3.2rem
-            color #128127
+            color rgba(23, 36, 25, 0.72)
         .head-dop-period
             font-weight 500
             color #128127
