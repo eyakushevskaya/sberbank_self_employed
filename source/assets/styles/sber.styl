@@ -56,8 +56,20 @@ a
         box-shadow none
         border-radius 0
         &.popup-header
-            h1.fw-600
-                font-weight 600
+            h1
+                &.fw-600
+                    font-weight 600
+                &.start-screen__title
+                    font-size 2.4rem
+                    line-height 125%
+                    padding 16px 0
+                    letter-spacing -0.48px
+                    .welcome
+                        display block
+                        font-size 1.6rem
+                        line-height 2.4rem
+                        font-weight 600
+                        margin 0 0 4px
             .today
                 color #128127
                 font-weight 500
@@ -2966,6 +2978,21 @@ button.btn
         align-items center
         justify-content center
         flex-shrink 0
+
+.start-list
+    li
+        display flex
+        align-items flex-start
+        gap 8px
+        margin 0 0 16px
+    svg
+        width 32px
+        flex-shrink 0
+    .start-list__copy
+        padding 4px 0
+        font-size 1.6rem
+        line-height 2.4rem
+        color #172419
 
 
 .h-calendar-inner .ui-widget.ui-widget-content {
