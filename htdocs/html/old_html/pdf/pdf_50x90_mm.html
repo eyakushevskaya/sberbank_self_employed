@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+
+        <style>
+            @font-face {
+                font-family: "Inter";
+                src: url("fonts/Inter-cyrillic.woff2") format("woff2");
+                font-weight: 400, 500, 600, 900;
+            }
+
+            @font-face {
+                font-family: "Inter";
+                src: url("fonts/Inter-latin.woff2") format("woff2");
+                font-weight: 400, 500, 600, 900;
+            }
+
+            html {
+                margin: 0;
+                padding: 0;
+                height: 100%;
+            }
+
+            body {
+                box-sizing: border-box;
+                width: 50mm;
+                height: 90mm;
+                margin: 0 auto;
+                padding: 5mm;
+            }
+
+            body {
+                font-family: "Inter";
+                background: rgba(255, 255, 255, 1);
+            }
+
+            .pdf-page {
+                text-align: center;
+                color: rgba(0, 0, 0, 1);
+            }
+
+            .title {
+                margin: 0 0 2.5mm;
+                font-size: 10.5pt;
+                line-height: normal;
+                font-weight: 600;
+            }
+
+            .sub-title {
+                margin: 0 0 9mm;
+                font-size: 7.5pt;
+                line-height: normal;
+                font-weight: 500;
+            }
+
+            .qr {
+                width: 40mm;
+                height: 40mm;
+                display: block;
+                margin: 0 auto;
+            }
+
+            .footer {
+                margin: 12mm 0 0;
+                font-size: 4.5pt;
+                color: rgba(0, 0, 0, 0.70);
+            }
+
+            .footer strong {
+                font-weight: 900;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="pdf-page">
+            <h1 class="title">Онлайн-запись</h1>
+
+            <h2 class="sub-title">Арина<br />Волкова</h2>
+
+            <img class="qr" src="images/qr_50x90.svg" width="40mm" alt="QR-код">
+
+            <p class="footer">Работает на <strong>СОНЛАЙН</strong></p>
+        </div>
+    </body>
+</html>
