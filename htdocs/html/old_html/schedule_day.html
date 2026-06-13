@@ -18,9 +18,18 @@
 
         <div class="h-holder redesign-version">
 
+            <div class="hint-header">
+                <div class="hint-header__inner">
+                    Выключить режим подсказок
+                    <span class="hint-header__closer">
+                        <i class="ph-bold ph-x"></i>
+                    </span>
+                </div>
+            </div>
+
             <header class="h-header header-sticky">
                 <div class="h-fixed">
-                    <div class="head-top">
+                    <div class="head-top" data-help-anchor="hint-qu-1">
                         <h1 class="fw-600">
                             Расписание
                             <span class="beta-badge">Бета</span>
@@ -34,7 +43,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="head-dop w-padding">
+                    <div class="head-dop w-padding" data-help-anchor="hint-qu-2">
                         <div class="head-tabs_title-abs">Апрель 2026</div>
                         <ul class="head-tabs">
                             <li><span class="day">12</span><span class="year">пн</span></li>
@@ -56,7 +65,7 @@
                 <div class="h-wrap">
                     <div class="new-app-form-main pt-0">
                         <div class="schedule_filters-wrap">
-                            <div class="schedule_filters-left">
+                            <div class="schedule_filters-left" data-help-anchor="hint-qu-3">
                                 <span class="schedule_filters-number">
                                     28 150
                                     <i class="ph-bold ph-currency-rub"></i>
@@ -68,7 +77,7 @@
                                 </span>
                             </div>
                             <div class="schedule_filters-right">
-                                <ul class="schedule_filters-icons">
+                                <ul class="schedule_filters-icons" data-help-anchor="hint-qu-4">
                                     <li class="active">
                                         <a href="">
                                             <span class="icon-default">
@@ -164,7 +173,7 @@
                                     <td class="status-20">
                                         <div class="sch-m-in">
                                             <div class="sch-m-position fill-cols-3">
-                                                <div class="sch-m-position_inn">
+                                                <div class="sch-m-position_inn" data-help-anchor="hint-qu-5">
                                                     <div class="sch-person-time">
                                                         <div class="sch-person-time-time">10:15 - 11:00</div>
                                                         <div class="sch-person-time-icons">
@@ -458,7 +467,7 @@
                                     <td class="free">
                                         <div class="sch-m-in">
                                             <div class="sch-m-position">
-                                                <div class="sch-m-position_inn">
+                                                <div class="sch-m-position_inn" data-help-anchor="hint-qu-6">
                                                     <a class="sch-add-btn" href="">
                                                         <i class="fa fa-plus" aria-hidden="true"></i>
                                                     </a>
@@ -1129,11 +1138,445 @@
                 </div>
             </div>
 
+
+            <div class="hint-question-mark"
+                data-help-for="hint-qu-1"
+                data-help-popup="top-panel"
+                data-help-position="right-center"
+                data-help-offset-x="0"
+                data-help-offset-y="0"
+                data-help-z-index="5"
+            >
+                <span class="hint-question-mark__inner">?</span>
+                <template>
+                    <div data-help-title>
+                        Верхняя панель
+                    </div>
+
+                    <div data-help-content>
+                        <div class="hint-content-wrap">
+                            <p>Здесь находятся быстрые действия для работы с Расписанием</p>
+                            <ul class="list-icons">
+                                <li>
+                                    <span class="list-icons__icon">
+                                        <i class="ph ph-magnifying-glass"></i>
+                                    </span>
+                                    Найдите клиента по имени или номеру телефона и посмотрите его записи
+                                </li>
+                                <li>
+                                    <span class="list-icons__icon">
+                                        <i class="ph ph-bell"></i>
+                                    </span>
+                                    Посмотрите уведомления о новых записях, которые клиенты создали через онлайн-запись
+                                </li>
+                                <li>
+                                    <span class="list-icons__icon">
+                                        <i class="ph ph-question"></i>
+                                    </span>
+                                    Включите режим подсказок. На экране появятся значки с пояснениями к элементам программы. Отключить подсказки можно вверху страницы.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div data-help-footer>
+                        <div class="popup-footer_title fw-500 mb-16">Остались вопросы?</div>
+                        <a class="btn white-border" href="">Напишите в техподдержку</a>
+                    </div>
+                </template>
+            </div>
+
+            <div class="hint-question-mark"
+                data-help-for="hint-qu-2"
+                data-help-popup="top-panel"
+                data-help-position="right-center"
+                data-help-offset-x="0"
+                data-help-offset-y="0"
+                data-help-z-index="5"
+            >
+                <span class="hint-question-mark__inner">?</span>
+                <template>
+                    <div data-help-title>
+                        Календарь
+                    </div>
+
+                    <div data-help-content>
+                        <div class="hint-content-wrap">
+                            <p>Здесь находятся быстрые действия для работы с Календарем</p>
+                        </div>
+                    </div>
+
+                    <div data-help-footer>
+                        <div class="popup-footer_title fw-500 mb-16">Остались вопросы?</div>
+                        <a class="btn white-border" href="">Напишите в техподдержку</a>
+                    </div>
+                </template>
+            </div>
+
+            <div class="hint-question-mark"
+                data-help-for="hint-qu-3"
+                data-help-popup="top-panel"
+                data-help-position="right-center"
+                data-help-offset-x="40px"
+                data-help-offset-y="0"
+                data-help-z-index=""
+            >
+                <span class="hint-question-mark__inner">?</span>
+                <template>
+                    <div data-help-title>
+                        Фильтры
+                    </div>
+
+                    <div data-help-content>
+                        <div class="hint-content-wrap">
+                            <p>Здесь находятся быстрые действия для работы с Фильтрами</p>
+                        </div>
+                    </div>
+
+                    <div data-help-footer>
+                        <div class="popup-footer_title fw-500 mb-16">Остались вопросы?</div>
+                        <a class="btn white-border" href="">Напишите в техподдержку</a>
+                    </div>
+                </template>
+            </div>
+
+            <div class="hint-question-mark"
+                data-help-for="hint-qu-4"
+                data-help-popup="top-panel"
+                data-help-position="right-center"
+                data-help-offset-x="0"
+                data-help-offset-y="0"
+                data-help-z-index=""
+            >
+                <span class="hint-question-mark__inner">?</span>
+                <template>
+                    <div data-help-title>
+                        Вывод
+                    </div>
+
+                    <div data-help-content>
+                        <div class="hint-content-wrap">
+                            <p>Здесь находятся быстрые действия для работы с Выводом</p>
+                        </div>
+                    </div>
+
+                    <div data-help-footer>
+                        <div class="popup-footer_title fw-500 mb-16">Остались вопросы?</div>
+                        <a class="btn white-border" href="">Напишите в техподдержку</a>
+                    </div>
+                </template>
+            </div>
+
+            <div class="hint-question-mark"
+                data-help-for="hint-qu-5"
+                data-help-popup="top-panel"
+                data-help-position="right-top"
+                data-help-offset-x="0"
+                data-help-offset-y="0"
+                data-help-z-index=""
+            >
+                <span class="hint-question-mark__inner">?</span>
+                <template>
+                    <div data-help-title>
+                        Расписание
+                    </div>
+
+                    <div data-help-content>
+                        <div class="hint-content-wrap">
+                            <p>Здесь находятся быстрые действия для работы с Расписанием</p>
+                        </div>
+                    </div>
+
+                    <div data-help-footer>
+                        <div class="popup-footer_title fw-500 mb-16">Остались вопросы?</div>
+                        <a class="btn white-border" href="">Напишите в техподдержку</a>
+                    </div>
+                </template>
+            </div>
+
+            <div class="hint-question-mark"
+                data-help-for="hint-qu-6"
+                data-help-popup="top-panel"
+                data-help-position="right-top"
+                data-help-offset-x="0"
+                data-help-offset-y="0"
+                data-help-z-index=""
+            >
+                <span class="hint-question-mark__inner">?</span>
+                <template>
+                    <div data-help-title>
+                        Пустая строка
+                    </div>
+
+                    <div data-help-content>
+                        <div class="hint-content-wrap">
+                            <p>Здесь находятся быстрые действия для работы с Пустой строкой</p>
+                        </div>
+                    </div>
+
+                    <div data-help-footer>
+                        <div class="popup-footer_title fw-500 mb-16">Остались вопросы?</div>
+                        <a class="btn white-border" href="">Напишите в техподдержку</a>
+                    </div>
+                </template>
+            </div>
+
+
+            <div class="popup-wrap modal-popup hint-popup-template">
+                <div class="popup-inner">
+                    <div class="popup-header">
+                        <div class="newapp-title"></div>
+                        <span class="popup-closer">
+                            <i class="ph-x"></i>
+                        </span>
+                    </div>
+                    <div class="popup-body">
+                        <div class="h-fixed">
+                        </div>
+                    </div>
+                    <div class="popup-footer">
+                        <div class="h-fixed">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.js" type="text/javascript"></script>
         <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js" type="text/javascript"></script>
         <script src="../../f/js/main.js" type="text/javascript"></script>
+
+        <script type="text/javascript">
+            (function () {
+
+                function clearHintPositions() {
+                    document.querySelectorAll(".hint-question-mark[data-help-for]").forEach(function (hint) {
+                        hint.style.left = "";
+                        hint.style.top = "";
+                        hint.style.display = "";
+                        hint.style.position = "";
+                        hint.style.zIndex = "";
+                    });
+                }
+
+                function hasFixedLikeParent(element) {
+                    let current = element;
+
+                    while (current && current !== document.body) {
+                        const position = getComputedStyle(current).position;
+
+                        if (position === "fixed" || position === "sticky") {
+                            return true;
+                        }
+
+                        current = current.parentElement;
+                    }
+
+                    return false;
+                }
+
+                function getHintCoords(anchor, hint, position) {
+                    const rect = anchor.getBoundingClientRect();
+                    const anchorPosition = getComputedStyle(anchor).position;
+                    const isFixedLike = hasFixedLikeParent(anchor);
+
+                    const hintWidth = hint.offsetWidth;
+                    const hintHeight = hint.offsetHeight;
+
+                    const scrollX = isFixedLike ? 0 : window.scrollX;
+                    const scrollY = isFixedLike ? 0 : window.scrollY;
+
+                    let left = 0;
+                    let top = 0;
+
+                    switch (position) {
+                        case "right-top":
+                            left = rect.right + scrollX - hintWidth;
+                            top = rect.top + scrollY;
+                            break;
+
+                        case "right-center":
+                            left = rect.right + scrollX - hintWidth;
+                            top = rect.top + scrollY + rect.height / 2 - hintHeight / 2;
+                            break;
+
+                        case "right-bottom":
+                            left = rect.right + scrollX - hintWidth;
+                            top = rect.bottom + scrollY - hintHeight;
+                            break;
+
+                        case "left-top":
+                            left = rect.left + scrollX;
+                            top = rect.top + scrollY;
+                            break;
+
+                        case "center":
+                            left = rect.left + scrollX + rect.width / 2 - hintWidth / 2;
+                            top = rect.top + scrollY + rect.height / 2 - hintHeight / 2;
+                            break;
+                    }
+
+                    return {
+                        left: left,
+                        top: top,
+                        isFixedLike: isFixedLike
+                    };
+                }
+
+                function updateHintPositions() {
+                    if (!document.body.classList.contains("hint-show")) {
+                        return;
+                    }
+
+                    document.querySelectorAll(".hint-question-mark[data-help-for]").forEach(function (hint) {
+                        const anchor = document.querySelector(
+                            '[data-help-anchor="' + hint.dataset.helpFor + '"]'
+                        );
+
+                        if (!anchor) {
+                            hint.style.display = "none";
+                            return;
+                        }
+
+                        hint.style.display = "block";
+
+                        const position = hint.dataset.helpPosition || "right-top";
+                        const offsetX = parseInt(hint.dataset.helpOffsetX || 0, 10);
+                        const offsetY = parseInt(hint.dataset.helpOffsetY || 0, 10);
+
+                        const coords = getHintCoords(anchor, hint, position);
+
+                        hint.style.position = coords.isFixedLike ? "fixed" : "absolute";
+                        const customZIndex = hint.dataset.helpZIndex;
+
+                        if (customZIndex) {
+                            hint.style.zIndex = customZIndex;
+                        } else if (coords.isFixedLike) {
+                            hint.style.zIndex = "5";
+                        } else {
+                            hint.style.zIndex = "";
+                        }
+
+                        hint.style.left = coords.left + offsetX + "px";
+                        hint.style.top = coords.top + offsetY + "px";
+                    });
+                }
+
+                function clearHintPopup() {
+                    const popup = document.querySelector(".hint-popup-template");
+
+                    if (!popup) {
+                        return;
+                    }
+
+                    popup.querySelector(".newapp-title").innerHTML = "";
+                    popup.querySelector(".popup-body .h-fixed").innerHTML = "";
+                    popup.querySelector(".popup-footer .h-fixed").innerHTML = "";
+                }
+
+                function openHintPopup(hint) {
+                    const template = hint.querySelector("template");
+
+                    if (!template) {
+                        return;
+                    }
+
+                    const popup = document.querySelector(".hint-popup-template");
+
+                    if (!popup) {
+                        return;
+                    }
+
+                    const title = template.content.querySelector("[data-help-title]");
+                    const content = template.content.querySelector("[data-help-content]");
+                    const footer = template.content.querySelector("[data-help-footer]");
+
+                    popup.querySelector(".newapp-title").innerHTML = title ? title.innerHTML : "";
+                    popup.querySelector(".popup-body .h-fixed").innerHTML = content ? content.innerHTML : "";
+                    popup.querySelector(".popup-footer .h-fixed").innerHTML = footer ? footer.innerHTML : "";
+
+                    popup.style.display = "block";
+                }
+
+                function closeHintPopup() {
+                    const popup = document.querySelector(".hint-popup-template");
+
+                    if (!popup) {
+                        return;
+                    }
+
+                    popup.style.display = "none";
+                    clearHintPopup();
+                }
+
+                function openHintMode() {
+                    document.body.classList.add("hint-show");
+                    document.body.classList.remove("hint-ready");
+
+                    requestAnimationFrame(function () {
+                        updateHintPositions();
+
+                        requestAnimationFrame(function () {
+                            document.body.classList.add("hint-ready");
+                        });
+                    });
+
+                    setTimeout(function () {
+                        updateHintPositions();
+                    }, 200);
+                }
+
+                function closeHintMode() {
+                    document.body.classList.remove("hint-show");
+                    document.body.classList.remove("hint-ready");
+
+                    closeHintPopup();
+                    clearHintPositions();
+                }
+
+                document.addEventListener("click", function (e) {
+                    const popupCloser = e.target.closest(".hint-popup-template .popup-closer");
+
+                    if (popupCloser) {
+                        e.preventDefault();
+                        e.stopPropagation();
+
+                        closeHintPopup();
+                        return;
+                    }
+
+                    const hintModeCloser = e.target.closest(".hint-header__closer");
+
+                    if (hintModeCloser) {
+                        e.preventDefault();
+                        closeHintMode();
+                        return;
+                    }
+
+                    const hintModeOpener = e.target.closest(".head-top-icon-question");
+
+                    if (hintModeOpener) {
+                        e.preventDefault();
+                        openHintMode();
+                        return;
+                    }
+
+                    const hintButton = e.target.closest(".hint-question-mark");
+
+                    if (hintButton) {
+                        e.preventDefault();
+                        openHintPopup(hintButton);
+                        return;
+                    }
+                }, true);
+
+                window.addEventListener("resize", updateHintPositions);
+                window.addEventListener("scroll", updateHintPositions, true);
+
+            })();
+        </script>
     </body>
 
 </html>
