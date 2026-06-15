@@ -314,6 +314,45 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.js" type="text/javascript"></script>
         <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js" type="text/javascript"></script>
         <script src="../../f/js/main.js" type="text/javascript"></script>
+
+        <script type="text/javascript">
+            $(function () {
+                $(".with-currency input").each(function () {
+                    updateCurrencyPosition(this);
+                });
+
+                $(".with-currency input").on("input", function () {
+                    this.value = this.value.replace(/[^\d]/g, "");
+                    updateCurrencyPosition(this);
+                });
+
+                function updateCurrencyPosition(input) {
+                    var $input = $(input);
+                    var $currency = $input.closest(".with-currency").find(".currency");
+
+                    var span = $("<span></span>").text(input.value || "0");
+
+                    span.css({
+                        position: "absolute",
+                        visibility: "hidden",
+                        whiteSpace: "pre",
+                        fontFamily: $input.css("font-family"),
+                        fontSize: $input.css("font-size"),
+                        fontWeight: $input.css("font-weight"),
+                        letterSpacing: $input.css("letter-spacing")
+                    });
+
+                    $("body").append(span);
+
+                    var textWidth = span.width();
+                    span.remove();
+
+                    var left = $input.position().left + textWidth + 21;
+
+                    $currency.css("left", left + "px");
+                }
+            });
+        </script>
     </body>
 
 </html>
