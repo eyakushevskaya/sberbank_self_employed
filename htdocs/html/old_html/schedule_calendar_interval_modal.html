@@ -80,7 +80,17 @@
                         );
                     });
                 }, 100);
-                
+
+                setTimeout(function () {
+
+                    var $days = $(".ui-datepicker td:not(.ui-datepicker-other-month)");
+
+                    $days.eq(7).addClass("ui-state-interval-new-first");
+                    $days.slice(8, 33).addClass("ui-state-interval-new-between");
+                    $days.eq(33).addClass("ui-state-interval-new-last");
+
+                }, 100);
+
             });
         </script>
     </body>
