@@ -2884,6 +2884,84 @@ button.btn
     color #172419
     opacity .48
 
+.tariff__card-compare-checkbox
+    display none
+.tariff__card-compare-head
+    display flex
+    align-items center
+    justify-content space-between
+    .tariff__card-title
+        margin 0
+.tariff__card-compare-toggle
+    display flex
+    align-items center
+    justify-content center
+    width 24px
+    height 24px
+    border-radius 999px
+    background rgba(0, 0, 0, 0.04)
+    position relative
+    font-size 1.6rem
+    color rgba(23, 36, 25, 0.72)
+    .ph-bold
+        transform rotate(0deg)
+        transition transform .2s
+.tariff__card-compare-body
+    display none
+    padding 16px 0 8px
+.tariff__card-compare-checkbox
+    &:checked
+        & ~ .tariff__card-compare-body
+            display block
+        & ~ .tariff__card-compare-head .tariff__card-compare-toggle .ph-bold
+            transform rotate(180deg)
+.tariff__card-compare
+    width 100%
+    th
+        width 72px
+        padding 8px 4px
+        border-bottom 2px solid rgba(0, 0, 0, 0.12)
+        font-size 1.4rem
+        line-height 2rem
+        font-weight 600
+        letter-spacing -0.28px
+        text-align center
+        vertical-align top
+    td
+        padding 8px 4px
+        text-align center
+        vertical-align middle
+        border-bottom 1px solid rgba(0, 0, 0, 0.12)
+        font-size 1.4rem
+        line-height 2rem
+        font-weight 400
+        letter-spacing -0.28px
+        &.tariff__card-compare-title
+            text-align left
+            padding-left 0
+        h4
+            font-size 1.4rem
+            line-height 2rem
+            font-weight 600
+            letter-spacing -0.28px
+            margin 0
+        h5
+            font-size 1.4rem
+            line-height 2rem
+            font-weight 400
+            letter-spacing -0.28px
+            margin 0 0 0 16px
+        .tariff__card-compare-copy
+            display flex
+            align-items center
+            justify-content center
+        .tariff__card-compare-cop-icon
+            font-size 2.4rem
+            &.ph-check-circle
+                color #148F2B
+            &.ph-minus-circle
+                color #FF3B38
+
 .tariff__details-subtitle
     font-size 1.6rem
     line-height 2.4rem
