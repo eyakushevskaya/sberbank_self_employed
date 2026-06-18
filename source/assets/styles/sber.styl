@@ -360,6 +360,17 @@ a
                 border-color transparent
                 background none
     .radio-list-custom
+        label
+            &.d-fl
+                display flex
+                align-items center
+        .radio-icon
+            display flex
+            align-items center
+            margin-left auto
+            flex-shrink 0
+            font-size 1.6rem
+            color rgba(23, 36, 25, 0.72)
         .radio-label
             color #172419
         input.radio:checked
@@ -368,6 +379,13 @@ a
                 &:before
                     outline-color #148F2B
                     background #148F2B
+        .custom-radio-copy
+            color rgba(23, 36, 25, 0.72)
+            padding 0 0 0 36px
+            margin-top -6px
+            padding-bottom 8px
+            font-size 1.4rem
+            line-height 2rem
 
     .nav-list
         & + .logout
@@ -394,11 +412,16 @@ a
             padding-top 8px
         &.pb-0
             padding-bottom 0
+        .filter-tags-list
+            flex-wrap nowrap
     .filter-tags-list
+        flex-wrap wrap
+        gap 4px
         li
             background rgba(0, 0, 0, 0.04)
             border 1px solid transparent
             border-radius 16px
+            margin 0
             padding 7px 11px
             color rgba(23, 36, 25, 0.72)
             &.active
@@ -817,6 +840,8 @@ a
         &.padd2
             padding-top 16px
             padding-bottom 24px
+        &.pb-0
+            padding-bottom 0
 
     .visit-title
         padding 16px 0 0
@@ -1246,6 +1271,8 @@ a
         color #172419
         &.pb-0
             padding-bottom 0
+        &.pb-16
+            padding-bottom 16px
         &.pt-2
             padding-top 2px
         &.pt-4
@@ -1258,6 +1285,8 @@ a
             margin-bottom 16px
         .abs-currency
             color #172419
+    &.pt-16
+        padding-top 16px
     &.pb-0
         padding-bottom 0
     &.mb-16
@@ -1423,6 +1452,24 @@ a
                     right 12px
                     transform translateY(-50%)
 
+.custom-form__pack-transparent
+    box-sizing border-box
+    display flex
+    align-items flex-start
+    background rgba(0, 0, 0, .04)
+    border 1px solid transparent
+    height 58px
+    border-radius 8px
+    &.mb-12
+        margin-bottom 12px
+    .custom-form__field
+        padding 0
+        input.text
+            background none
+            border none
+    &:focus-within
+        border-color rgba(18, 129, 39, .4)
+
 .custom-form__field-headline
     font-size 1.8rem
     line-height 2.8rem
@@ -1479,6 +1526,8 @@ a
         padding-top 8px
     &.ptb-12
         padding 12px 0
+    &.ta-center
+        text-align center
 
 .custom-form__field-avatar
     width 96px
@@ -1588,6 +1637,12 @@ button.btn
             background rgba(255, 255, 255, 1)
     .popup-body-inner-top
         padding-top 16px
+    .b-content-round-item-title
+        font-size 1.8rem
+        line-height 2.8rem
+        font-weight 600
+        margin 4px 0 16px
+        letter-spacing 0
 .modal-popup
     .popup-header
         min-height 64px
@@ -1938,6 +1993,9 @@ button.btn
     th.day-column
         top 132px
 
+.schedule-wrap-item
+    &.pb-12
+        padding-bottom 12px
 .schedule-table
     table-layout auto
     thead
@@ -2077,6 +2135,8 @@ button.btn
         padding 0
         appearance none
         -webkit-appearance none
+        &.w-text
+            width calc(100% - 30px)
 .work-time:focus-within
     border-color rgba(18, 129, 39, 0.40)
     .work-time__label
