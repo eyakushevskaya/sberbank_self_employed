@@ -1821,6 +1821,15 @@ button.btn
                 a
                     &:after
                         background-image url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAAgVBMVEUAAAAVjysUjywUjysYjygUjywVjysYjzAVjyoVjysVjysgjyAVjy0WjykTkSsUjysgjzAUjysVkCsTjisTjy0UjyoTjywUkCwUjywQjygVjysQjzAWjy0VjisTjysVjysUjywUjywUjyoVjysUjywUkCsVkCsUjysUkCwUkCwUjyv7wTj7AAAAKnRSTlMA3+/vIEBgIJAwzxBgUF9wEL+fX1CAkL+/II8QUKBgn4Cvr6DPv9/Pr88GwMBMAAABZElEQVR42u3X2W7CMBCF4eMtG92gUNZC9+W8/wMWSpsmMdZkVHHT8l2hwfpxhIUFTg65tuZCMY8Z0inmMW4J8+ME8qFlXw85IrmlgosL91QZoos67mCg9UpYccyAIw0i9VwOZMauEannQkDwxwMKp8D/DbwUZ/MBMCjHhSE5UQZGAQ3lXYAqMPWQMcleAr8JmBKfwqKypB0ugi5gPHYy0xhlioD12MqrTjXvHbjcX+zscKuegRG2zsnYRb+Ar29N8XZMb8Bw73Hgb/mj6hMoAWSN3SzZkMkB09wAu6uMHCgABKYCDGJgBeAmHSjEQAlglg5UYuAKgEsHnBhoz+NV2kDt+zyoH6G27PkIcwBPjVwt586zGDhrfY2bHF+uNtwpdAcpFlRHOWbQ4lKfkTEhQ8ss+Xv02msD8I6xVfIdWo8O/xatmQBIPcQ5FMYuaq+h4g1bKg8l+WKRhWJqSftehNM/444P8V0p3kvPbXQAAAAASUVORK5CYII=")
+        &.chat
+            &.active
+                a
+                    color #fff
+                .ph
+                    font-family Phosphor-Fill !important
+                    &.ph-chat-dots:before
+                        font-family Phosphor-Fill
+                        content "\ea27"
         a
             padding-left 2px
             padding-right 2px
@@ -3269,6 +3278,98 @@ button.btn
         align-items center
         justify-content center
         flex-shrink 0
+
+.chat__list
+    &-item
+        display flex
+        align-items center
+        gap 0 12px
+        margin 0 0 16px
+    &-item-avatar
+        position relative
+        display flex
+        align-items center
+        justify-content center
+        width 48px
+        height 48px
+        border-radius 16px
+        flex-shrink 0
+        background #2B9927
+        color #fff
+        font-size 1.6rem
+        line-height 2.4rem
+        .ph
+            font-size 2.4rem
+    &-item-avatar-messenger
+        width 24px
+        height 24px
+        background-position 0 0
+        background-repeat no-repeat
+        background-size 24px 24px
+        position absolute
+        bottom -6px
+        right -6px
+        &.max
+            background-image url("data:image/png;base64,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")
+        &.tg
+            background-image url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAFF0lEQVR4AdVZNXQkRxBVHilPDGIlZojMTsx2atrYl5qZnR2nx8zMzMyMomUa8fGVq0b/uedas1u9dwu+/95/XV1dW/WbpN2ZunKAiOqZEeY45jJmB9OjAODbhhiJfbSuloDoXyDqfnHMTKb6wj0qL6ZVfCKK8HLhl0oIfxTbXS10SM1yif8cq15VoOYH5TgytcYv1RZf+0nI1lGJ6L95l5Z1XKfvDw3SR5v66MXlHrUvyjNzYvs+GZMYib0PfO58YUs587HBO/TP8SF6cRmLXZhjwWgVfn9wgGJDd0q9E4+6TKCDHNDHq/jPsSFqW5j1BUkLQqTxw2YiJuCbfHqYSsCxspz7KK/6G6vzI2IWZCzxQvQx3m7HWXxzTZ6i7rvxa5Gjo+Ocd0vEi6DRXAiGjLVbcZafc+Ykt+tRqg+bwDS3lc9xwbRNIy7EH97P2D7JLTVcd6H01X99FW/5/JGirdyC6KeEMg5/ym/Rx+eEwT5sxPuTWJXj+3WntF3AN8Ji4Ms2CFEQatmYhOVHX6Ed8/fRgdJ2QfueEx28zYmTgSJJi/DPS9o0McYHwcFx9JFDWqmpYJvz8flufx+Kl4evr8zQmJ0ePb84BV8CTIIJ3oV+ckC9enz6b9yhFhSQFrah7bPjYD/HYkXUgdQNIuDb/b0Fcz63JOVyFyIygfFUBEuvDFHL3Pg9bJ2bsHyJUFv4wboMzTg/FCpmzC5PYmQCiDe2TEJqKxhfp/0k/HafXwSMWRPxGTr+6ZYsVrswPtuSM7lEuJXv2/0eKViufnX4YG0awphzYijg28HW53OLEjTpVL+92n5/0snRfolHDsO5hlJbQUcdKXh2YYKa50T/IwrBHmnf50LTzw2EHpMDqev02orkqOPQd+OOyRvMKX3Yzy6KkwJPnYAkstkCfrIp4wsMgwj863CvxLH4wdCJmVwmr11Hgz6B2T2hPJC0hRvI2GvLE/TsgljBuE3dw3ZOwznGdpmAV/wIRZGsG+zx+e3eHG3qGZaVtlbd88flc2fzhS/xX4f8OJM72MKWHBrUS/ze6gQ1zeLETGlhM439yaYUfbM3S88siPq+V5fFKTpY/JvlJxvTo/LY9vtrkk6XeBkVhgjjpF3ObGZ+sT1DClhcgmPxGeyuneebPVlSsE39R7bk8iAKCTvR6px4opfCgKNmxXf6tGssuTJACsarXyWk2DPzeXVmdhbmrHDfK0uj1DMw+igdSFwLzwPxsKW201eJelLw58EcNc7soCZmo8UwnzXGu+FRENPO9gU/hwnABr/ZkyEd+JGvfZ2I8io2zugAr0oh0zd+JkSgL2xC7CtLe/zdkFV9d1UsMHYVxOdAqen8A587v5KCPw5mpVBZ2ATaPtg04bhHDojYj8w97S68sqSbC1ypJLlGF+kwx8d9F3CUXl7cRQ3TrwiloLGZxrb7iLV98MOW3Dg6KqbVAe67AJzJXcckLkMkt8yGImws4seY5JTcpa+++y5YO7GokxqmXSpECBNbp+SSC/5AD7acfuBbmHAsd69otKXwjwMZ/345oqPsD3d7Bm7S17uS9Pi0i9TANK1hgzX25JzLIhyrXr6Hu+pzIu2v1JJLffTVrgS9s6KLnmKR/gSmXqAnZ1+it9n31c6kxPixpUN/W6Pfh+pDP/faJB5O8dbbmhq+5IuU8zVrB1UPx7QL+389Up5+ZMqzG9MrIdx+cVGNiUQe8A3+tqoLVyYzHqI67BWGbxliIuUS/S/V526ZkyHkRQAAAABJRU5ErkJggg==")
+        &.vk
+            background-image url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAAAeFBMVEUAAAD///////////////////////////////////////////////////////////////////////9Amf/f7v8giP8Ad/9gqv+Qw/+/3f+Au/8Qf/8wkP9Qof8wkf+gzP/v9//P5f+v1f9Qov+Pw//P5v8QgP+PxP8aridmAAAAEnRSTlMAIO+AYBDff7/PkFCfr1+PsKAkrH7PAAABwElEQVR4Xo2U6bLbIAxGBcbEznJv++F1yd3bvv8bdkYDVoID8fnp0ZlPAizaUJrXi9UAbPVqFD2hPFS4ozYqW66x5ZxUpDzi8FBQNZLYByEvGhn0adMOnnBI1O80TmDGoX9r5+6GuXXXoQHzIoLi/hvXJehZ0TK55fq2S9KyUd8P0HcZHJcUxChwQJdl5KZKFs4sDHlhkAgF5jsv9FgjDBiXFxasETWYNi+0YKq1I8z82TnHgnOuvfvwFwzK0BH8aD4KwOQPZ+wYLxg63gpTJLz5+xHhSFUQwll8izA3/n5E+EU2COEshlWYv0KACJYQBOYDaILgGtbuBR0Jo78RMFIvXyLBAfgU4WveCjoIEvFPEpo2FmRoicC4AHjnP+1jiYe+iMBMkPankCFCJRcXG5O3x+jijAge13hBTk0EQ6U8PlHeP73gwk2Gx6eIqr3PO+yBAsySF1zoiKjUsjTSXENHHLF7CZyJ1og/eaEJARLhni+Ngjz1vlVp42WcnNvFyzhcd/NzdfG6X/qfEcyJBCqQRQbYbxQUcdLIoA1tUBZJapl3T1u6oATq98PyktIoU+OOSsrTzrGyALS9HM22+j9pkYvq2Ts64wAAAABJRU5ErkJggg==")
+        &.whatsapp
+            background-image url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAAAmVBMVEUAAAD////////////////////////////////////////////////////////////////////////x/PUl02a78c9A2Xkz1nBc3oxB2XnJ9Nnk+eyS6bJO24J345+f7Lzj+eyt78bI9NmS6bNB2HmE5qmF5qnk+uuF5qit78Xk+uyg7Lyt7sZq4ZZp4ZVP24PX9+PW9+PW9uOS4xVsAAAAEnRSTlMAIO+AYBDff8+/kFCvn49fsKAswAsAAAAB2ElEQVR42oXU13rbMAwFYIoaljyS9pDay9lOuvv+D9dGgkVSJOX/GhAAAp+YJY7ujgkHkGR3UcBuiHcZDCnl+MI5bCdvCoXbdswlSOGVOIrcc2zgB6sd3LDbir+dcYDhIx+7bmzOMNxr83IoonuWpH/Xc7iaPNHDS6nrBBapY4CmkCuFViSkhrAYpcM7rnjMPp2seG9GaBb4K93Ks1EiAhGF9OiNEilIJyf12Mm1byCZ1tG5mONb4MVqSoDEqqMH9bFHuZaDRGwPUslJAwClXPkBsmcZZkLO3gDgp9UTyJflLBr16K73fcMsYSC5nFUAemlpMOMM5Lskj8DoT4CdUAig2kjgqiXyCoipqbp2JCxDt+ZeX6YVPi0pYhn6CFKa59leWgAtLf0XSKYWN0ilw+rABrW4CMS4h+GMWb8aIWIxrmqpG3IAYlh1hIBdb8O+0bLqS/VG6j8QquvzGaA6Yizm6pncaqF1pEoIb3yLqxNjqkTjj9cLqBKjdHoVWISMpNojPRuzVw2UxPwZV7KsLrkA2ktFz/r0G+6f8bTuhz9QPv7DyoFpQnhYA3gz/PHkwLGBR8wSJPBKA2bzt8VD5hF8dYbHzC+IUhgyCt/M2WcJAJ4c95Ed/Q/JMYjx7fBM8QAAAABJRU5ErkJggg==")
+    &-item-copy
+        width calc(100% - 60px)
+    &-item-title
+        font-size 1.6rem
+        line-height 2.4rem
+        font-weight 500
+        overflow hidden
+        text-overflow ellipsis
+        white-space nowrap
+        margin 0 0 2px
+    &-item-body
+        display flex
+        align-items center
+        gap 0 12px
+    &-item-body-text
+        overflow hidden
+        text-overflow ellipsis
+        white-space nowrap
+        font-size 1.4rem
+        line-height 2rem
+        letter-spacing -0.28px
+        color #172419
+    &-item-body-meta
+        white-space nowrap
+        display flex
+        align-items center
+        gap 0 8px
+        margin-left auto
+        .ph-bold
+            font-size 1.6rem
+            &.ph-checks
+                color #148F2B
+            &.ph-check
+                color #172419
+                opacity 0.48
+    &-item-body-unread
+        box-sizing border-box
+        min-width 16px
+        height 16px
+        padding 0 2px
+        border-radius 999px
+        background #FF3B38
+        font-size 1.1rem
+        line-height 1.6rem
+        font-weight 500
+        color #fff
+        letter-spacing -0.22px
+        text-align center
+    &-item-body-time
+        font-size 1.2rem
+        line-height 1.6rem
+        letter-spacing -0.24px
+        color rgba(23, 36, 25, 0.72)
 
 .start-list
     li
