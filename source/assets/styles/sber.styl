@@ -60,6 +60,26 @@ a
                         color #172419
                         &.weekend
                             color #E63532
+    &.dashboard-type
+        background url(../../f/i/dashboard-bg.jpg) 50% 50% no-repeat
+        background-size cover
+        .h-header
+            display block
+            background none
+            padding 0
+            min-height 80px
+            flex-shrink 0
+            .h-fixed
+                flex-grow 1
+        .popup-body
+            padding-bottom 0
+            flex-grow 1
+        .h-footer
+            flex-shrink 0
+            padding 0
+            height 74px
+            min-height 74px
+            background #fff
     
 
     .h-header
@@ -1801,6 +1821,7 @@ button.btn
                 path
                     fill #148F2B
                     fill-opacity 1
+        &.home
         &.schedule
         &.work-schedule
             &.active
@@ -1819,6 +1840,11 @@ button.btn
                         transform translateX(-50%)
                 svg
                     opacity 0
+        &.home
+            &.active
+                a
+                    &:after
+                        background-image url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAAPFBMVEUAAAAYjzAUjysUjywUjysUjyoVjzAUjysVjysUjywVjysgjyAYjygVjisQjzAgjzAVjysVjysVjysTjyvV+MINAAAAFHRSTlMAIL/v/68w7zCvoBAgoBAQn99gYBsTWesAAACXSURBVHgB7dQ1gsMAEMVQM7Pvf9d1t0lUKQzzez2zk7dfLM3yokyv76u8OFY3t/RSQC8F9FJAbwX0XkDvBfReQA/B9xB8D8H3EHwPwfcQfE+BvRfYe4G9F9hbgb0TUtEfQgqgLdQyAIVbTUAugAACeA7Q9cnFhlEBQ4JNCpgJpApY8M+blw94CgHUrl8BbKvp8/20jcX+AGi7HmTyo7LVAAAAAElFTkSuQmCC")
         &.schedule
             &.active
                 a
@@ -2382,6 +2408,53 @@ button.btn
             color rgba(23, 36, 25, 0.72)
     .head-top-dots-popup-wrap
         margin-left 20px
+.head-top__user
+    position relative
+    min-height 48px
+    padding 24px 0 8px 56px
+    color #fff
+    &-avatar
+        position absolute
+        top 24px
+        left 0
+        width 48px
+        height 48px
+        border-radius 999px
+        background linear-gradient(180deg, #EE6352 0%, #F7B05B 100%)
+        font-size 1.6rem
+        line-height 2.4rem
+        font-weight 500
+        text-transform uppercase
+        display flex
+        align-items center
+        justify-content center
+    &-data
+        padding 1px 0 0
+        .name
+            font-size 1.6rem
+            line-height 2.4rem
+            font-weight 600
+            white-space nowrap
+            overflow hidden
+            text-overflow ellipsis
+            margin 0 0 2px
+        .tarrif
+            font-size 1.4rem
+            line-height 2rem
+            font-weight 500
+            letter-spacing -0.28px
+            white-space nowrap
+            overflow hidden
+            text-overflow ellipsis
+            margin 0
+.redesign-version
+    .h-header
+        &.popup-header
+            .head-top__user
+                h1.name
+                    font-size 1.6rem
+                    line-height 2.4rem
+                    font-weight 600
 .head-dop
     &.w-padding
         .head-top-icon
@@ -3413,6 +3486,83 @@ button.btn
     color #fff
     .ph
         font-size 2.4rem
+
+
+.dash-widget
+    &__row
+        display flex
+        align-items flex-start
+        justify-content stretch
+        margin 0 0 16px
+        gap 0 16px
+    &__item
+        width 50%
+        background #fff
+        border-radius 24px
+        flex-grow 1
+    &__item-inner
+        padding 16px 16px 4px
+        .head-tabs
+            span.year
+                display block
+.dwi-wrap
+    padding 0 0 16px
+.redesign-version
+    .popup-body
+        h3.dash-widget__item-title
+            font-size 1.6rem
+            line-height 2.4rem
+            font-weight 700
+            margin 0
+            &.ta-center
+                text-align center
+            &.mb-8
+                margin-bottom 8px
+            &.d-fl
+                display flex
+                align-items center
+                .kol
+                    margin-left auto
+.dash-widget__create-btn
+    flex-grow 1
+    display flex
+    align-items center
+    justify-content center
+    gap 0 11px
+    padding 12px
+    border-radius 24px
+    border 2px solid #fff
+    background #148F2B
+    font-size 1.6rem
+    line-height 2.4rem
+    font-weight 500
+    color #fff
+    .ph
+        font-size 2.4rem
+.dash-widget__share-btn
+    flex-grow 1
+    display flex
+    align-items center
+    justify-content center
+    gap 0 8px
+    padding 12px
+    border-radius 24px
+    background #fff
+    font-size 1.6rem
+    line-height 2.4rem
+    font-weight 500
+    color #128127
+    .ph
+        font-size 2.4rem
+.schedule_master-dashboard-empty
+    min-height 144px
+    display flex
+    align-items center
+    justify-content center
+    font-size 1.6rem
+    line-height 2.4rem
+    font-weight 400
+    color rgba(23, 36, 25, 0.48)
 
 
 .h-header.header-sticky
