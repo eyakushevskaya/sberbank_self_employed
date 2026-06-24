@@ -1174,12 +1174,21 @@ a
             flex-wrap wrap
         &.ai-center
             align-items center
+    .na-sr__item-logo
+        img
+            display block
+            width 32px
+            height 32px
     .na-sr__item-title
         &.mb-0
             margin-bottom 0
     .na-sr__item-col1
         &.flexible
             width auto
+        &.d-flex
+            display flex
+            align-items center
+            gap 8px
     .na-sr__item-col2
         &.d-flex
             display flex
@@ -1221,11 +1230,13 @@ a
             font-size 1.4rem
             line-height 2rem
     .na-sr__item-dop-copy
-        color rgba(23, 36, 25, 0.72)
+        color #172419
         display block
         margin 0 0 2px
         &:last-child
             margin 0
+        &.color-gray
+            color rgba(23, 36, 25, 0.72)
     .na-sr__item-icon
         display flex
         align-items center
