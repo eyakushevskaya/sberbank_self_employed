@@ -1677,6 +1677,10 @@ button.btn
         background rgba(0, 0, 0, 0.40)
         .popup-inner
             background rgba(255, 255, 255, 1)
+    &.centered-popup
+        box-sizing border-box
+        background rgba(0, 0, 0, 0.40)
+        padding 16px
     .popup-body-inner-top
         padding-top 16px
     .b-content-round-item-title
@@ -1685,6 +1689,19 @@ button.btn
         font-weight 600
         margin 4px 0 16px
         letter-spacing 0
+.centered-popup
+    .popup-inner
+        display block
+        width calc(100% - 32px)
+        height auto
+        position absolute
+        top 50%
+        left 50%
+        transform translate(-50%, -50%)
+        background #fff
+        border-radius 24px
+    .popup-inner__wrap
+        padding 24px 16px 16px
 .modal-popup
     .popup-header
         min-height 64px
@@ -1782,6 +1799,28 @@ button.btn
         font-weight 500
         a
             color #72BC80
+
+.city__section
+    &-copy
+        font-size 1.6rem
+        line-height 2.4rem
+        margin 0 0 16px
+    &-title
+        font-size 2rem
+        line-height 2.4rem
+        font-weight 600
+        margin 0 0 16px
+    &-subcopy
+        font-size 1.4rem
+        line-height 2rem
+        color rgba(23, 36, 25, 0.72)
+        margin 0 0 24px
+    &-btns
+        padding 8px 0 0
+        display flex
+        align-items center
+        justify-content stretch
+        gap 8px
 
 .hr-for-footer
     height 64px
