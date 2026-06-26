@@ -1760,6 +1760,8 @@ button.btn
 .popup-footer-inner
     padding-top 8px
     padding-bottom 24px
+    .btn + .btn
+        margin-top 8px
 .popup-footer_title
     font-size 1.6rem
     line-height 2.4rem
@@ -2773,6 +2775,18 @@ button.btn
     font-size 1.4rem
     line-height 2rem
     color rgba(23, 36, 25, 0.72)
+.sett__success-item-addition
+    padding 48px 16px 16px
+    text-align left
+    font-size 1.6rem
+    line-height 2.4rem
+    h3
+        font-size 1.8rem
+        line-height 2.8rem
+        font-weight 600
+        margin 0 0 8px
+    p
+        margin 0 0 8px
 
 .sett__messenger-info
     font-size 1.6rem
@@ -3114,6 +3128,15 @@ button.btn
     line-height 1.6rem
     font-weight 500
     color #128127
+    display inline-block
+    &.fs-14
+        font-size 1.4rem
+        line-height 2rem
+        padding-top 2px
+        padding-bottom 2px
+    &.red
+        background rgba(255, 59, 56, 0.08)
+        color #E63532
 .tariff__card-badge-abs
     background rgba(23, 36, 25, 0.72)
     border-radius 999px
@@ -3904,3 +3927,5 @@ body.hint-show
         padding-right 16px
     .h-footer
         position static
+        height auto
+        min-height 74px
