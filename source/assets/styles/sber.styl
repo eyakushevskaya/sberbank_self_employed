@@ -2495,6 +2495,8 @@ button.btn
             a.head-top-icon-edit
                 margin-right 20px
                 color rgba(23, 36, 25, 0.72)
+                & + a.head-top-icon-question
+                    margin-left 0
             a.head-top-icon-question
                 margin-left 20px
                 color rgba(23, 36, 25, 0.72)
@@ -3599,7 +3601,7 @@ button.btn
     gap 0 8px
     padding 12px 24px
     position fixed
-    bottom 90px
+    bottom 24px
     right 16px
     z-index 999
     border-radius 16px
@@ -3611,6 +3613,9 @@ button.btn
     color #fff
     .ph
         font-size 2.4rem
+
+.h-footer + .action-create-btn
+    bottom 90px
 
 
 .dash-widget
