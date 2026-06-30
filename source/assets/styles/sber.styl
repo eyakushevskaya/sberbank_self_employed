@@ -1825,6 +1825,13 @@ button.btn
         display flex
         align-items center
         justify-content center
+    &__content
+        padding 4px 0 0 40px
+        position relative
+    &__icon
+        position absolute
+        top 0
+        left 0
     &__copy
         margin 0 0 12px
     &__copy-var2
@@ -2826,16 +2833,45 @@ button.btn
         line-height 2.8rem
         font-weight 600
         margin 0 0 2px
+        & + .head-tabs-wrap
+            padding-top 14px
     p
         margin 0
         & + p
             margin 16px 0 0
+        & + h2
+            margin-top 16px
     ul.bulls
         padding 14px 0 0
         li
             display flex
             align-items flex-start
             gap 0 5px
+    ul.bulls-2
+        padding 0
+        li
+            display flex
+            align-items flex-start
+            gap 0 8px
+            margin 0 0 8px
+        .bull
+            min-width 24px
+            flex-shrink 0
+        .bull-icon
+            position relative
+            padding-left 27px
+            svg
+                position absolute
+                top -3px
+                left 0
+                fill #172419
+            strong
+                font-weight 600
+        .bull-subcopy
+            font-size 1.4rem
+            line-height 2rem
+            margin 4px 0 0
+            color rgba(23, 36, 25, 0.72)
 .sett__messenger-info-qr
     text-align center
     padding 16px 0
@@ -3670,6 +3706,13 @@ button.btn
             margin 0 0 12px
         a.link
             font-weight 500
+    &__banner-content
+        position relative
+        padding 4px 0 0 40px
+    &__banner-icon
+        position absolute
+        top 0
+        left 0
 .dwi-wrap
     padding 0 0 16px
 .redesign-version
